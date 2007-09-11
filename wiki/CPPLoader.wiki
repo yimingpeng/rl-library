@@ -1,4 +1,4 @@
-#summary One-sentence summary of this page.
+#summary This is a discussion about some of the design decisions for the C/C++ agent and environment loaders.
 
 = Introduction =
 
@@ -11,4 +11,3 @@ Add your content here.  Format your content with:
   * Text in *bold* or _italic_
   * Headings, paragraphs, and lists
   * Automatic links to other wiki pages
-
