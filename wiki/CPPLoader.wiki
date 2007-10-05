@@ -2,6 +2,12 @@
 #labels Featured
 
 
+The C/C++ Agent and Environment loaders are now working, so I'm going to use this space to explain some things to know.
+
+=Heading1=
+
+  * C/C++ Agent and Environment loading can be turned on and off through environment variables CPPAgent=true or CPPEnv=true
+
 = Introduction =
 
 Here are some thoughts about how to make the visualizers and trainers available to agents and environments created with C+/C++.
