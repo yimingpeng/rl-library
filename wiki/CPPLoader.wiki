@@ -8,6 +8,9 @@ The C/C++ Agent and Environment loaders are now working, so I'm going to use thi
 
   * C/C++ Agent and Environment loading can be turned on and off through environment variables CPPAgent=true or CPPEnv=true
 
+  * You can set these variables from the command line like: {{{java -DCPPEnv="true"}}}
+
+
 = Introduction =
 
 Here are some thoughts about how to make the visualizers and trainers available to agents and environments created with C+/C++.
