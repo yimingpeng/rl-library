@@ -17,6 +17,12 @@ Here are some facts about Austin Robocup Keep-away.  For each, we should either 
   * Keepers are randomly assigned to the top 3 corners, rest of keepers go to middle
   * Top-left keeper starts with the ball
  
+==Reward Function==
+The reward function seems to be "number of primitive steps since last decision point for this agent".  It's not discounted, so this doesn't lead to weird things like trying to get the ball out of your possession and the taking a nap.
+
+If we are using the same learner for all keepers, we would just use a single counter and give the reward as the number of steps since last decision point, instead of tracking it on a per-keeper basis.
+
+
 ==Macro-Actions==
 
 ===HoldBall()===
