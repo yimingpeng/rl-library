@@ -31,9 +31,23 @@ Move to a position that is free from opponents and open for a pass from the ball
 Veloso, M., Stone, P., & Bowling, M. (1999). Anticipation as a key for collaboration in a team of agents: A case study in robotic soccer. In Proceedings of SPIE Sensor Fusion and Decentralized Control in Robotic Systems II, Vol. 3839 Boston. 
 
 
+===GoToBall()===
+Intercept a moving ball or move directly towards a stationary ball. 
+
+===BlockPass(k)===
+Move to a position between the keeper with the ball and keeper k. 
+
 Details of all of these here:
 Stone, P. (2000). Layered Learning in Multiagent Systems: A Winning Approach to Robotic Soccer.  MIT Press. 
 
+
+==Higher Level Player Behavior==
+Discussed on pages 9-13 of this:
+http://www.cs.utexas.edu/users/pstone/Papers/bib2html/b2hd-AB05.html
+
+Should we do the same thing?
+
+== This list is incomplete, add to it ==
 
 = Done =
 
