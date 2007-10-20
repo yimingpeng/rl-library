@@ -16,10 +16,28 @@ Here are some facts about Austin Robocup Keep-away.  For each, we should either 
   * Takers all start in bottom left
   * Keepers are randomly assigned to the top 3 corners, rest of keepers go to middle
   * Top-left keeper starts with the ball
-  * 
-- 
+ 
+==Macro-Actions==
+
+===HoldBall()===
+Remain stationary while keeping possession of the ball in a position that is as far away from the opponents as possible. 
+
+===PassBall(k)===
+Kick the ball directly towards keeper k. 
+
+===GetOpen()===
+Move to a position that is free from opponents and open for a pass from the ball’s  current position (using SPAR (Veloso, Stone, & Bowling, 1999)). 
+
+Veloso, M., Stone, P., & Bowling, M. (1999). Anticipation as a key for collaboration in a team of agents: A case study in robotic soccer. In Proceedings of SPIE Sensor Fusion and Decentralized Control in Robotic Systems II, Vol. 3839 Boston. 
+
+
+Details of all of these here:
+Stone, P. (2000). Layered Learning in Multiagent Systems: A Winning Approach to Robotic Soccer.  MIT Press. 
+
 
 = Done =
 
-==Keep-away is a semi-mdp but RL-Viz only draws on RL_step
+==Keep-away is a semi-mdp==
+
+Keep-away is a semi-mdp, but RL-Viz only draws on RL_step
 We solved this problem by making the Keep-away domain store a history of recent states and then send the whole list over to RL-Viz when it wants new information.  RL-Viz can then play back the intermediate simulator steps between agent actions.  This gives us the illusion of a continuously running RL-Viz simulation, but we're only really getting information at keeper decision points. 
