@@ -1,0 +1,25 @@
+#summary This is a getting started guide and some useful information about RL-Viz.
+#labels Featured
+
+= Introduction =
+
+RL-Viz needs more docs.
+
+
+= Environment Variables =
+
+RL-Viz uses several environment variables.
+
+===AgentShell Variables===
+* CPPAgent=<true|false>  : this variable specifies if the dynamic agent loader will look for agents in the form of C/C++ shared libraries.
+* RLVIZ_LIB_PATH=/path/to/libraries/ : this variable tells the loader where to look for the agentJars/ folder
+
+
+===EnvironmentShell Variables===
+* CPPEnv=<true|false>  : this variable specifies if the dynamic environment loader will look for environments in the form of C/C++ shared libraries.
+* RLVIZ_LIB_PATH=/path/to/libraries/ : this variable tells the loader where to look for the envJars/ folder
+
+
+To set any of these variables when calling java, use java -D<varname>=<varvalue>
+
+For example: java -DRLVIZ_LIB_PATH=/users/yourname/rl-library/libraries -DCPPAgent=true
