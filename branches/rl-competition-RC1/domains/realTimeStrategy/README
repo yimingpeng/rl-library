@@ -1,9 +1,9 @@
 
 ===
-====== RL Competition 2008 RTS Problem
+====== RL Competition 2008 Real Time Strategy (RTS) Problem
 ==========================================
 
-The competition web site is http://www.rl-competition.org/ 
+The competition web site is http://rl-competition.org/ 
 
 This document describes most of what you need to know for 
 the RTS problem. 
@@ -17,15 +17,15 @@ this code, please use the discussion boards on the web site.
 
 Before continuing please read INSTALL and make sure the required 
 dependencies are installed and the build system is initialized 
-(make init). 
+$>make init 
 
 To make the RL-Glue environment:
 
-  make rlgenv
+$>make rlgenv
 
 To make the RL-Glue C++ agent: 
 
-  make rlgagent
+$>make rlgagent
 
 These will build the binaries in the default mode (MODE=dbg) which
 compiles with debug symbol information and no optimization. You may
@@ -34,31 +34,39 @@ without debug symbols. Please see the Makefile for more information
 on how to do this. 
 
 To make the Java agent, please see
-rl-competition/agents/realTimeStrategyAgentJava/README
+rl-competition/agents/realTimeStrategyAgentJava/README.txt
 
 These will make the executables and place them in bin/ . These
-executables are two components of the RL-Glue framework
+executables are two components of the RL-Glue framework.
 
 To run an experiment, you must do two things: 
  
-  - Start the RLViz App (This also launches the RTS environment)
+
+	1)
+
+  	Start the RLViz App (This also launches the RTS environment)
     in trainers/guiTrainerRealTimeStrategy:
+
 $> bash run.bash
   
 --or--
 
-  - Start the console trainer (This also launches the RTS environment)
+  	Start the console trainer (This also launches the RTS environment)
     in trainers/consoleTrainerRealTimeStrategyJava:
-$> bash run.bash
 
+	$> bash run.bash
 
-  - Connect the agent, either: 
+	2)
+
+  	Connect the agent, either: 
       (Java) in agents/realTimeStrategyAgentJava:
+
 $> bash run.bash
 
 --or--
       
       (C++) in domains/realTimeStrategy: 
+
 $> ./bin/rlagent
 
 
@@ -72,8 +80,8 @@ The relevant RL-Glue Java agent files are in:
 
 In GUI visualization for the RL Competition: 
 
-  GREEN = Player 0 (Opponent AI)
-  RED = Player 1 (RL agent AI)
+  RED = Player 0 (Opponent AI)
+  BLUE = Player 1 (RL agent AI)
 
 For more information on the structure, layout, or behavior of the 
 implementation, please refer to the documentation in the doc/ 
@@ -97,7 +105,7 @@ or shrink over time. Reward is based purely on the outcome of the game.
 In the case of a tie, scores are assigned based on the relative accomplishments 
 of both players."
 
-The game description relies on a paremeter set that includes the width and 
+The game description relies on a parameter set that includes the width and 
 height of the game field, maximum hit points of units, speeds of units, 
 costs of units, radii of units, sight and attack ranges, etc.. These parameters 
 will always be fixed from episode to episode in a given phase of the 
@@ -111,7 +119,7 @@ problem: the environment includes a "bot opponent" which employs a fixed policy.
 The RTS problem is built on the RL-Glue framework. The environment and 
 communication are implemented. You have to build a learning agent. There are 
 default Java and C++ agents included in this distribution, but you are free to 
-implement an agent in any language supported by RL-Glue: Java, C, C++, or Pyhton. 
+implement an agent in any language supported by RL-Glue: Java, C, C++, or Python. 
 The communication protocol is described in doc/rlg_protocol.txt. 
 
 Game dynamics take place simultaneously in simulated (discrete) lock-step 
@@ -154,7 +162,7 @@ by workers to build funds to train more units. The profiles of each unit
 
 Units automatically attack enemies unless they are busy (workers mining, 
 attacking someone else). The target unit in the auto-attack is the one with
-the lowest hit points in the vacinity. This auto-attack can be overridden 
+the lowest hit points in the vicinity. This auto-attack can be overridden 
 by issuing a specific attack action for the unit. 
 
 Attacks work like so: if the target unit is within the attack range of an
