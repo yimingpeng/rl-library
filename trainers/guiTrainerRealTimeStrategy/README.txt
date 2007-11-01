@@ -5,4 +5,6 @@ run.bash:
 - Starts the real time strategy environment program
 - Starts a graphical experiment program 
 
+There is no way or need to recompile the gui trainers.
+
 You need to start your own agent.
