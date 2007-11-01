@@ -1,0 +1,68 @@
+
+ortslite is a simple stripped-down implementation of an RTS 
+(Real-time Strategy) game. 
+
+To compile ortslite: 
+
+  1. Install dependencies:
+
+     - boost >= 1.33
+
+       If running on a Linux system, this is probably already done
+       for you. Try building the boost test in misc/boost_test. If it
+       compiles and runs, then boost is already installed. If not, then 
+       it's likely easily obtained by using your package manager; search
+       for packages named "boost" and/or "boost-dev". Otherwise, follow
+       instructions below.
+
+       (Note: run scripts/install-boost.bash to do all this automatically)
+
+         cd misc
+         tar xjvf boost_1_34_1.tar.bz2
+         cd boost_1_34_1
+         ./configure --prefix=$HOME
+         make
+         make install
+
+       If you see a message indicating that not all the libraries were
+       built properly, that is OK. It is likely that the optional python
+       libraries were not built. 
+
+       Lastly, create this symbolic link. 
+
+         cd $HOME/include
+         ln -s boost-1_34_1/boost
+
+       Now, build and run the test program in misc/boost_test to verify
+       that it worked. 
+
+     - gawk (only if installing on Linux). 
+
+  2. Set the OSTYPE variable. Supported values are LINUX and DARWIN. It is recommended
+     to set this environment variable in your shell's startup script. 
+
+       export OSTYPE="LINUX"
+
+  3. Choose whether you want to enable server-side visualization. Enabling this
+     requires SDL. Set the variable ENABLE_GUI in the Makefile to either 0 or 1. 
+
+  4. If it's the first time compiling the software:
+
+       make init
+
+  5. Try making the ol app:
+
+       make
+
+     This will create bin/ol 
+
+For information on how the RL-Glue applications work, please see README.rlglue. 
+It is important to read README.rlglue for the Reinforcement Learning competition. 
+
+In visualization, 
+
+  GREEN = Player 0 
+  RED = Player 1 
+
+There is more documentation on ortslite in docs/
+
