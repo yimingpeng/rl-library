@@ -86,16 +86,17 @@ We have provided several sample agents, implemented in C/C++, Python, and Java.
 
 There is at least one sample agent specifically created for each domain, these are:
 /agents/mountainCarAgentCPP
-/agents/tetrisAgentJava
 /agents/realTimeStrategyAgentJava
 /agents/realTimeStrategyAgentCPP
 /agents/helicopterAgentCPP
 
-There is also one general purpose agent that can work on any problem except real time strategy:
+There is also one general purpose agent that can work on any problem except real time strategy (in each of the 3 languages):
 /agents/randomAgentJava
-
+/agents/randomAgentCPP
+/agents/randomAgentPython
 
 To run any agent, go into its directory and type:
+$>make
 $>bash run.bash 
 
 *****
@@ -128,6 +129,7 @@ We have provided several sample trainers, implemented in C/C++, Python, and Java
 These console trainers will run any of the Java domains: Mountain Car, Tetris, Helicopter, or Polyathlon.  Check the source code in /trainers/<someTrainer>/src/ for an idea how to select which problem the trainer will select.  Special training programs are required for real time strategy and keep-away.
 
 To run any trainer, go into its directory and type:
+$>make
 $>bash run.bash
 
 *****
