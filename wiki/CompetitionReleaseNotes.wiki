@@ -1,0 +1,5 @@
+#summary This page contains the drafts of the rl-competition software release notes
+#labels Phase-Support
+
+= Notes Since B497 =
+  * /trainers/guiTrainerJava/bin/rlViz.jar is now the same version as the main gui trainer
