@@ -2,4 +2,13 @@
 #labels Phase-Support
 
 = Notes Since B497 =
+
+===Boring Details===
   * /trainers/guiTrainerJava/bin/rlViz.jar is now the same version as the main gui trainer
+  * Dynamic agent loader has been refactored
+  * Dynamic environment loader has been refactored
+
+===Fun Details===
+  * Visualizer now runs in a window with the control components on that window
+  * Under-the-hood support for agent visualization is done and working
+  * Dynamic agent loader is working
