@@ -36,8 +36,10 @@ def load(envNameString, theParams):
 def preload(envNameString):
 	theRequest = "TO=%d FROM=%d CMD=%d VALTYPE=%d VALS=NULL" % (ENVSHELL, BENCHMARK, LISTQUERY, NOVALUE)
 	theResponse = RLGlue.RL_env_message(theRequest)
+	print 'response to list request:'+theResponse
 	lastColonPos = theResponse.rfind("=")
 	thePayLoad = theResponse[lastColonPos+1:]
+	print 'I think the payload is:'+thePayLoad
 	if thePayLoad[-1] == ':':
 		thePayLoad = thePayLoad[:-1]
 	items = thePayLoad.split(':')
@@ -46,6 +48,7 @@ def preload(envNameString):
 	for i in range(1,len(items),2):
 		theNames.append(items[i])
 		theParamHolders.append(ParameterHolder(items[i+1]))
+        print 'sent a request for envs, got back a list of size' +str(len(items))
 	
 	for i in range(len(theNames)):
 		if theNames[i] == envNameString:
