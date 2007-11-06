@@ -26,7 +26,7 @@ Contents:
 1 :: HYPER QUICK START
 --------------------------
 If you just want to see something happen without learning anything about what's in this package, do:
-$> make all
+$> make
 $> bash runDemo.bash
 
 ***
@@ -39,7 +39,7 @@ This will run the graphical trainer for Tetris, Helicopter Hovering, Polyathlon 
 --------------------------
 To install the core RL-Glue code, as well as all of the sample agents, environments, and trainers, type:
 
-$> make all
+$> make
 
 Several of the competition domains (Mountain Car, Tetris, Helicopter Control, Polyathlon) are implemented in Java and are already packaged and ready to use.  Other domains like real time strategy and keep-away require additional installation.  Please see the /domains/ directory for more information on this domains.
 

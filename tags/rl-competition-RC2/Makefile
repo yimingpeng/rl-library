@@ -8,8 +8,6 @@ EXP_NETWORKED=1
 
 CFLAGS = -I$(RL_GLUE_PATH) -O2
 
-include $(RL_GLUE_PATH)/RL_glue.makefile
-
 all: $(BIN_PATH)/RL_glue
 	cd ./agents/randomAgentJava/ && make
 	cd ./agents/randomAgentCPP/ && make
@@ -22,7 +20,6 @@ all: $(BIN_PATH)/RL_glue
 	cd ./trainers/consoleTrainerRealTimeStrategyJava/ && make
 
 clean:
-	
 	-rm -f $(BUILD_PATH)/*
 	-rm -f $(BIN_PATH)/RL_glue
 	-rm -f ./system/includes/*.pyc
@@ -39,3 +36,5 @@ clean:
 	cd ./trainers/consoleTrainerPython/ && make clean
 	cd ./trainers/consoleTrainerCPP/ && make clean
 	cd ./trainers/consoleTrainerRealTimeStrategyJava/ && make clean
+
+include $(RL_GLUE_PATH)/RL_glue.makefile
