@@ -25,6 +25,7 @@ clean:
 	
 	-rm -f $(BUILD_PATH)/*
 	-rm -f $(BIN_PATH)/RL_glue
+	-rm -f ./system/includes/*.pyc
 	cd ./agents/randomAgentJava/ && make clean
 	cd ./agents/randomAgentCPP/ && make clean
 	cd ./agents/mountainCarAgentCPP/ && make clean

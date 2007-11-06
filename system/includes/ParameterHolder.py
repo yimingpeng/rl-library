@@ -21,20 +21,21 @@ BOOL_PARAM=2
 STRING_PARAM=3
 
 class ParameterHolder:
-	intParams = {}
-	doubleParams = {}
-	boolParams = {}
-	stringParams = {}
 	
-	allParams = {}
-	#we'll let everything be an alias to itself, and then we'll always just look up aliases
-	aliases = {}
-
-	allParamNames = []
-	allParamTypes = []
-	allAliases = []
 	
 	def __init__(self,stringRep=None):
+		self.intParams = {}
+		self.doubleParams = {}
+		self.boolParams = {}
+		self.stringParams = {}
+
+		self.allParams = {}
+		#we'll let everything be an alias to itself, and then we'll always just look up aliases
+		self.aliases = {}
+
+		self.allParamNames = []
+		self.allParamTypes = []
+		self.allAliases = []
 		if stringRep == None:
 			return
 		arrayRep = stringRep.split('_')
@@ -85,7 +86,8 @@ class ParameterHolder:
 				else:
 					outString = outString + "false_"
 			else:
-				outString = outString + self.getStringParamEncoded(self.allParamNames[i])
+				outString = outString + self.getStringParamEncoded(self.allParamNames[i]) + "_"
+				
 			
 		outString = outString + "%d_" % (len(self.allAliases))
 		for i in range(len(self.allAliases)):
