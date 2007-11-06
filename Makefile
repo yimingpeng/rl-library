@@ -12,6 +12,7 @@ include $(RL_GLUE_PATH)/RL_glue.makefile
 
 all: $(BIN_PATH)/RL_glue
 	cd ./agents/randomAgentJava/ && make
+	cd ./agents/randomAgentCPP/ && make
 	cd ./agents/mountainCarAgentCPP/ && make
 	cd ./agents/realTimeStrategyAgentJava/ && make
 	cd ./agents/helicopterAgentCPP/ && make
@@ -25,6 +26,7 @@ clean:
 	-rm -f $(BUILD_PATH)/*
 	-rm -f $(BIN_PATH)/RL_glue
 	cd ./agents/randomAgentJava/ && make clean
+	cd ./agents/randomAgentCPP/ && make clean
 	cd ./agents/mountainCarAgentCPP/ && make clean
 	cd ./agents/realTimeStrategyAgentJava/ && make clean
 	cd ./agents/helicopterAgentCPP/ && make clean
