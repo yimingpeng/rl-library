@@ -85,7 +85,7 @@ class ParameterHolder:
 				else:
 					outString = outString + "false_"
 			else:
-				outString = outString + self.getStringParam(self.allParamNames[i])
+				outString = outString + self.getStringParamEncoded(self.allParamNames[i])
 			
 		outString = outString + "%d_" % (len(self.allAliases))
 		for i in range(len(self.allAliases)):
@@ -133,7 +133,9 @@ class ParameterHolder:
 		name = self.getAlias(alias)
 		if not self.allParams.has_key(name):
 			sys.stderr.write("Careful, you are setting the value of parameter: %s but the parameter hasn't been added...\n" % (name))
-		self.boolParams[name] = value
+		value = value.replace(":","!!COLON!!")
+		value = value.replace("_","!!UNDERSCORE!!")
+		self.stringParams[name] = value
 
 	def addIntegerParam(self,alias): #void
 		self.allParams[alias] = INT_PARAM
@@ -206,7 +208,7 @@ class ParameterHolder:
 			sys.exit(1)
 		return self.boolParams[name]
 	
-	def getStringParam(self,alias): #string
+	def getStringParamEncoded(self,alias): #string
 		name = self.getAlias(alias)
 		if not self.allParams.has_key(name):
 			sys.stderr.write("Careful, you are getting the value of parameter: %s but the parameter hasn't been added...\n" % (name))
@@ -215,6 +217,12 @@ class ParameterHolder:
 			sys.stderr.write("Careful, you are getting the value of parameter: %s but the parameter isn't a string parameter...\n" % (name))
 			sys.exit(1)
 		return self.stringParams[name]
+	
+	def getStringParam(self,alias):
+		encodedVersion = self.getStringParamEncoded(alias)
+		fixedVersion = encodedVersion.replace("!!COLON!!",":")
+		fixedVersion = fixedVersion.replace("!!UNDERSCORE!!","_")
+		return fixedVersion
 
 	def getParamCount(self): #int
 		return len(self.allParams)
