@@ -27,6 +27,7 @@ clean:
 	-rm -f $(RL_GLUE_PATH)/Python/rlglue/network/*.pyc
 	-rm -f $(RL_GLUE_PATH)/Python/rlglue/agent/*.pyc
 	-rm -f $(RL_GLUE_PATH)/Python/rlglue/environment/*.pyc
+	-rm -f agents/randomAgentPython/src/*.pyc
 	cd ./agents/randomAgentJava/ && make clean
 	cd ./agents/randomAgentCPP/ && make clean
 	cd ./agents/mountainCarAgentCPP/ && make clean
