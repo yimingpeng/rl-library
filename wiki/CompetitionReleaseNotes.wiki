@@ -1,6 +1,19 @@
 #summary This page contains the drafts of the rl-competition software release notes
 #labels Phase-Support
 
+= Notes Since B530 =
+
+===Boring Details===
+ * Vizualizer no longer crashes when there are no agents or environments when it starts up
+ * Load button becomes disabled when no environments or agents
+ * The speed slider/label only becomes enabled when an experiment is loaded
+
+===Fun Details===
+ * Colors added to tetris blocks. Each shape is now a different color!
+ * Real Time Strategy environment can now be compiled and loaded as a dynamic C++ library
+ * RTS java agent can now be loaded dynamically as a JAR, allowing local running of RTS experiments!
+
+
 = Notes Since B497 =
 
 ===Boring Details===
