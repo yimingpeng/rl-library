@@ -14,14 +14,27 @@
  * RTS java agent can now be loaded dynamically as a JAR, allowing local running of RTS experiments!
 
 
-= Notes Since B497 =
+
+== Build 530 ==
+
 
 ===Boring Details===
-  * /trainers/guiTrainerJava/bin/rlViz.jar is now the same version as the main gui trainer
-  * Dynamic agent loader has been refactored
-  * Dynamic environment loader has been refactored
+    * Mountain Car observations are fixed
+    * RL-Glue C/C++ Task Spec Parser doesn't crash when no reward range given (Helicopter)
+    * /trainers/guiTrainerJava/bin/rlViz.jar is now the same version as the main gui trainer
+    * Dynamic agent loader has been refactored
+    * Dynamic environment loader has been refactored
+    * Cleaned up and improved some of the frame and panel code in the visualizer
+    * Visualizer rendering optimized a bit
+    * The console trainers can now load Helicopter correctly
+    * The console trainers take a variable for the MDP # for Helicopter
+    * Can now build everything (except real time strategy) with $>make  instead of $>make all
+    * Make clean now cleans compiled python files 
 
-===Fun Details===
-  * Visualizer now runs in a window with the control components on that window
-  * Under-the-hood support for agent visualization is done and working
-  * Dynamic agent loader is working
+
+===Fun Details===    
+    * Visualizer now runs in a window with the control components on that window
+    * Save and load buttons in visualizer added (they call env_get_state and env_set_state)
+    * Name/Description/Author/Url meta data added to environments and displayed in Viz
+    * Under-the-hood support for agent visualization is done and working
+    * Dynamic agent loader is working (not available to competitors... yet) 
