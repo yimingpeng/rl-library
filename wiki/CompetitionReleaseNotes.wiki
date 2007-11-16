@@ -1,17 +1,32 @@
 #summary This page contains the drafts of the rl-competition software release notes
 #labels Phase-Support
 
-= Notes Since B530 =
+== Build 549 ==
 
-===Boring Details===
- * Vizualizer no longer crashes when there are no agents or environments when it starts up
- * Load button becomes disabled when no environments or agents
- * The speed slider/label only becomes enabled when an experiment is loaded
+===Mundane (but important) Updates===
 
-===Fun Details===
- * Colors added to tetris blocks. Each shape is now a different color!
- * Real Time Strategy environment can now be compiled and loaded as a dynamic C++ library
- * RTS java agent can now be loaded dynamically as a JAR, allowing local running of RTS experiments!
+    * Vizualizer no longer crashes when the agent/environment loaders find no agent or environments
+    * Load button becomes disabled when no environments or agents
+    * The speed slider/label only becomes enabled when an experiment is loaded
+    * Some updates to RL-Glue, mostly involving Python stuff brought up by alito in the forums
+    * Some task spec parsing fixes in RL-Glue
+    * Updated RL-Viz so that "load experiment" calls RL_init, resolving a mismatched set of init_cleanup calls when loading/unloading environments immediately (brought up by Brad Knox  in the forums)
+    * Add some other sanity checking to RL-Viz to stop weird mismatches
+    * Added -source 5 to the javac calls in the Makefiles (brought up by Tarek in the forums)
+    * Real Time Strategy environment can now be compiled and loaded as a dynamic C++ library (in testing -- not ready for competition yet)
+    * RTS java agent can now be loaded dynamically as a JAR, allowing local running of RTS experiments!(in testing -- not ready for competition yet)
+    * Update to the Python console trainer to be more like the C++/Java trainers
+    * Update to the C++ trainer to compile when you try and run with Helicopter
+
+===Fun Updates===
+
+    * Colors added to tetris blocks. Each shape is now a different color!
+
+===KNOWN BUGS===
+
+    * The Real Time Strategy C/C++ Agent has a behavioral bug.  It will only build a base in the first episode.  We decided to put this release out with that problem in order to get all of the fixes out sooner. 
+
+
 
 
 
