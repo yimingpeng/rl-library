@@ -1,6 +1,13 @@
 #summary This page contains the drafts of the rl-competition software release notes
 #labels Phase-Support
 
+== Since Build 552 ==
+  * Fixed Helicopter to report the right number of observations (12) in the task spec
+  * Update Helicopter Visualizer to only draw 12 variables
+
+== Build 552 ==
+  * Fixed bug in C RTS agent behavior
+
 == Build 549 ==
 
 ===Mundane (but important) Updates===
