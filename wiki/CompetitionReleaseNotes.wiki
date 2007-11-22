@@ -1,9 +1,13 @@
 #summary This page contains the drafts of the rl-competition software release notes
 #labels Phase-Support
 
-== Since Build 552 ==
+== Build 564 ==
   * Fixed Helicopter to report the right number of observations (12) in the task spec
   * Update Helicopter Visualizer to only draw 12 variables
+  * There was a bug with resource gathering in the real time strategy problem.  The fix included things on the server side and on the agent sides (Java/C++).  Reported in forums by AustinAgent
+  * A trick that we used to make all of the windows come to the front together makes bad things happen on Windows (apparently - not tested).  Removed this trick to make Windows work better.  Reported in forums by samet
+
+ 
 
 == Build 552 ==
   * Fixed bug in C RTS agent behavior
