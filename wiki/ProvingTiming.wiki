@@ -1,0 +1,16 @@
+#summary This page contains details about proving runs
+
+= Helicopter =
+I ran Helicopter on my Mac Book.  The entire experiment took 15 hours and 25 minutes.  This is to run for 6 million steps (1000 episodes x 6000 steps per episode). This was done for 15 different MDPs.
+
+The summary dialog was:
+EVENT: Helicopter
+
+==========Proving Run Summary==========
+Total Number of Episodes: 14000.0
+Total Return: -4.2430980595300627E8
+Total Time in Milliseconds: 4362736
+
+Not that the time in MS is wrong, that's about 1.2 hours.
+
+Initial zipped log files were 20 MB.  I cut to log only 1/200 episodes and it went down to 5.1 MB.  This is still too big.
