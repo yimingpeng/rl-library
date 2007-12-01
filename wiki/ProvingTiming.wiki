@@ -13,6 +13,7 @@ Log files size are between 90Kb and 1.7 Mb, which is fine.  This is logging 1/25
 27 mins 30 secs
 
 Episodes 32247
+This result is not the same as the leaderboard report.  Filing as bug.
 
 Return -4867553
 
