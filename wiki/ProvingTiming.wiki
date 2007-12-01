@@ -33,3 +33,16 @@ Not that the time in MS is wrong, that's about 1.2 hours.
 Initial zipped log files were 20 MB.  I cut to log only 1/200 episodes and it went down to 5.1 MB.  This is still too big.
 
 *I think I'd like to run this again with the other tech committee account and see what the variance of the result is*
+
+= Tetris =
+Results from the App are.
+
+EVENT: Tetris
+
+==========Proving Run Summary==========
+Total Number of Episodes: 603027.0
+Total Return: 1062.0
+Total Time in Milliseconds: 1814238
+
+Actual time was 4 hours and 51 minutes.
+Return reported on proving page is 1338.0
