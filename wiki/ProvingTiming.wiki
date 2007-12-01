@@ -1,5 +1,12 @@
 #summary This page contains details about proving runs
 
+= Mountain Car =
+I ran Mountain Car on my Mac Book.  The entire episode took less than an hour (about 40 minutes).  This is to run 100 000 steps x 50 MDPs.
+
+I don't have the summary result saved.  Total number of episodes was 32887 (from the leaderboard).
+
+Log files size are between 90Kb and 1.7 Mb, which is fine.  This is logging 1/25 episodes.  Again, should run with other technical committee account to get an idea of variance.
+
 = Helicopter =
 I ran Helicopter on my Mac Book.  The entire experiment took 15 hours and 25 minutes.  This is to run for 6 million steps (1000 episodes x 6000 steps per episode). This was done for 15 different MDPs.
 
