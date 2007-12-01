@@ -7,6 +7,10 @@ I don't have the summary result saved.  Total number of episodes was 32887 (from
 
 Log files size are between 90Kb and 1.7 Mb, which is fine.  This is logging 1/25 episodes.  Again, should run with other technical committee account to get an idea of variance.
 
+==Linux Ubuntu===
+27 mins 30 secs
+Episodes 32247
+Return -4867553
 = Helicopter =
 I ran Helicopter on my Mac Book.  The entire experiment took 15 hours and 25 minutes.  This is to run for 6 million steps (1000 episodes x 6000 steps per episode). This was done for 15 different MDPs.
 
