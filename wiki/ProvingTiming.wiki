@@ -60,7 +60,13 @@ That is logging 1/100 Episodes on 5 000 000 steps x 10 MDPs.
 
 = RTS = 
 This is for the C++ Agent running on my iMac
+
 Summary didn't print in proving app (it said Event:RTS then nothing else)
+
 Total Time: 8 hours, 6 minutes
+
 Total Score on Leaderboard: 478246
-Log size is 845 Kb, that is logging 1/100 episodes and running 37 500 000 steps and 1 MDP.  This was 49444 episodes (~750 steps per Episode).  That is a lot of episodes.  We can probably cut the number of steps substantially.
+
+Log size is 845 Kb, that is logging 1/100 episodes and running 37 500 000 steps and 1 MDP.  This was 49444 episodes (~750 steps per Episode).  That is a lot of episodes.  
+
+We can probably cut the number of steps substantially.
