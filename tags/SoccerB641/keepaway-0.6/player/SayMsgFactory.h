@@ -75,7 +75,7 @@ class SayMsgFactory {
 
   virtual TeammatePos *getTeammatePos(){ return new TeammatePos(); }
 
-
+	virtual			~SayMsgFactory() {}
 };
 
 
