@@ -115,6 +115,7 @@ public:
   bool        setTimeLastSeen               ( Time        time               );
   Time        getTimeLastSeen               (                          ) const;
 
+	virtual			~Object() {}
 };
 
 /*****************************************************************************/
@@ -132,6 +133,7 @@ public:
   AngDeg      getGlobalAngle   ( SideT s                                  );
 
   void show                    ( ostream & os = cout                      );
+	virtual			~FixedObject() {}
 };
 
 /*****************************************************************************/
@@ -180,6 +182,7 @@ public:
   bool        setGlobalVelocityLastSee ( VecPosition vec            );
   VecPosition getGlobalVelocityLastSee (                            )   const;
 
+	virtual			~DynamicObject() {}
 };
 
 /*****************************************************************************/
@@ -260,6 +263,7 @@ public:
   bool    setTimeGlobalArm     ( Time     time                  );
   Time    getTimeGlobalArm     (                                ) const;
 
+	virtual			~PlayerObject() {}
 };
 
 /*****************************************************************************/
@@ -274,6 +278,8 @@ class BallObject: public DynamicObject
 public:
   BallObject();
   void show( ostream & os = cout );
+
+	virtual			~BallObject() {}
 
 };
 
@@ -371,6 +377,8 @@ public:
 
   int          getTackleExpires     (                  ) const;
   bool         setTackleExpires     ( int          i   );   
+
+	virtual			~AgentObject() {}
 } ;
 
 
