@@ -1,10 +1,14 @@
 
 #TODO
 BOOST_ROOT = ../../system/boost
+X11_path = /usr/X11R6
 
 RCSSBASE = ./rcss
 
-CPPFLAGS=-I/usr/X11R6/include
+export CPPFLAGS = -I$(X11_PATH)/include
+export PATH = $PATH:$RCSSBASE/bin
+export LD_LIBRARY_PATH=$BOOST_ROOT/lib:$RCSSBASE/lib:$RCSSBASE/lib/rcssserver/modules
+export DYLD_FALLBACK_LIBRARY_PATH=$BOOST_ROOT/lib:$RCSSBASE/lib:$RCSSBASE/lib/rcssserver/modules
 
 rcssbase:
 	cd rcss-src/rcssbase-11.1.0 && ./configure --prefix=$(RCSSBASE) --with-boost=$(BOOST_ROOT)
