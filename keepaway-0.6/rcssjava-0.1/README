@@ -1,0 +1,98 @@
+* Description and License
+
+RCSSJava is a java library with some (hopefully) useful code for
+interacting with the Soccer Server used in RoboCup.  This library was
+created by Gregory Kuhlmann and Peter Stone at the University of Texas
+at Austin.  It is made freely available under the GNU Public License.
+
+Some of the parsing in this package is done with the ANTLR parser
+generator.  For convenience, we include the binary release with
+this package.  For source code and more info, visit:
+http://www.antlr.org/
+
+* Intended Use
+
+This package was designed mainly to create trainers and coaches for
+the Soccer Server.  We have used it to setup up learning scenarios for
+our Keepaway players 
+
+Keepaway Site: 
+
+http://www.cs.utexas.edu/~AustinVilla/sim/keepaway/
+
+Selected Publications:
+
+Keepaway Soccer: From Machine Learning Testbed to Benchmark.
+Peter Stone, Gregory Kuhlmann, Matthew E. Taylor, and Yaxin Liu.
+In Itsuki Noda, Adam Jacoff, Ansgar Bredenfeld, and Yasutake Takahashi, editors, RoboCup-2005: Robot Soccer World Cup IX, Springer Verlag, Berlin, 2006. To appear.
+
+Behavior Transfer for Value-Function-Based Reinforcement Learning. 
+Matthew E. Taylor and Peter Stone. 
+In The Fourth International Joint Conference on Autonomous Agents and Multiagent Systems, pp. 53\u201359, ACM Press, New York, NY, July 2005.
+
+Reinforcement Learning for RoboCup-Soccer Keepaway.
+Peter Stone, Richard S. Sutton, and Gregory Kuhlmann.
+Adaptive Behavior, 2005. 
+
+These and other keepaway papers can be found here:
+http://www.cs.utexas.edu/~pstone/Papers/bib2html/
+
+Also, it is used in our simulated coach, which won the 2005 RoboCup
+Coach Competition in Osaka, Japan.
+
+Coach Site: 
+
+http://www.cs.utexas.edu/~AustinVilla/sim/2005/).
+
+Publications:
+
+The UT Austin Villa 2003 Champion Simulator Coach: A Machine Learning Approach.
+Gregory Kuhlmann, Peter Stone, and Justin Lallinger. 
+In Daniele Nardi, Martin Riedmiller, and Claude Sammut, editors, RoboCup-2004: Robot Soccer World Cup VIII, pp. 636\u2013644, Springer Verlag, Berlin, 2005.
+
+Guiding a Reinforcement Learner with Natural Language Advice: Initial Results in RoboCup Soccer. 
+Gregory Kuhlmann, Peter Stone, Raymond Mooney, and Jude Shavlik. 
+In The AAAI-2004 Workshop on Supervisory Control of Learning and Adaptive Systems, July 2004.
+
+These and other keepaway papers can be found here:
+http://www.cs.utexas.edu/~pstone/Papers/bib2html/
+
+This package could also be extended to be useful in creating a
+java-based player.
+
+A logplayer and keepaway trainer are included in the package.
+
+* Compilation and Installation
+
+This package comes compiled.  To use the library, simply add
+rcssjava.jar to your CLASSPATH.
+
+The source files are included in the rcssjava directory and its
+sub-directories.  If you modify the source file and would like to
+generate a new rcssjava.jar file, run "make" from the top-level (if
+your system supports make).  It is also possible to add this package's
+top-level directory in your CLASSPATH, to use the library without 
+creating a new rcssjava.jar file.
+
+* Running included applications
+
+To run the trainer:
+java rcssjava.trainer.Trainer
+OR
+java -jar rcssjava.jar
+
+To run the logplayer:
+java rcssjava.logplayer.LogPlayer
+
+Both apps accept the "-help" option to print usage information.
+
+* Documentation
+
+Javadoc documentation can be found in the /docs/ sub-directory.
+
+* Need more info?
+
+Visit http://www.cs.utexas.edu/~AustinVilla/sim/keepaway/
+Or email: kuhlmann@cs.utexas.edu
+
+

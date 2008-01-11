@@ -8,7 +8,7 @@
 # Top-level keepaway directory
 keepaway_dir=`pwd`
 # Top-level rcssjava directory ** SET THIS OPTION **
-rcssjava_dir=~/rcssjava-0.1
+rcssjava_dir=$keepaway_dir/rcssjava-0.1
 
 ############################################################
 # Keeper options                                           #
