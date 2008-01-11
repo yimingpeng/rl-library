@@ -5,9 +5,9 @@
 # No commandline parameters.  All options are set in this file.
 #
 
-BOOST_ROOT = ../../system/boost
+export BOOST_ROOT=../../system/boost
 
-RCSSBASE = ./rcss
+export RCSSBASE=./rcss
 
 export PATH=$PATH:$RCSSBASE/bin
 export LD_LIBRARY_PATH=$BOOST_ROOT/lib:$RCSSBASE/lib:$RCSSBASE/lib/rcssserver/modules
