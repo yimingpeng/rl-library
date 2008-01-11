@@ -5,8 +5,16 @@
 # No commandline parameters.  All options are set in this file.
 #
 
+BOOST_ROOT = ../../system/boost
+
+RCSSBASE = ./rcss
+
+export PATH=$PATH:$RCSSBASE/bin
+export LD_LIBRARY_PATH=$BOOST_ROOT/lib:$RCSSBASE/lib:$RCSSBASE/lib/rcssserver/modules
+export DYLD_FALLBACK_LIBRARY_PATH=$BOOST_ROOT/lib:$RCSSBASE/lib:$RCSSBASE/lib/rcssserver/modules
+
 # Top-level keepaway directory
-keepaway_dir=`pwd`
+keepaway_dir=`pwd`/keepaway-0.6
 # Top-level rcssjava directory ** SET THIS OPTION **
 rcssjava_dir=$keepaway_dir/rcssjava-0.1
 
