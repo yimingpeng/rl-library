@@ -3,7 +3,7 @@
 BOOST_ROOT = ../../system/boost
 X11_path = /usr/X11R6
 
-RCSSBASE = ./rcss
+export RCSSBASE = $(shell pwd)/rcss
 
 export CPPFLAGS = -I$(X11_PATH)/include
 export PATH = $PATH:$RCSSBASE/bin
@@ -27,7 +27,7 @@ rcssmonitor:
 
 tools:
 	cd keepaway-0.6/tools && make
-	cd keepaway-0.6/tools && cp hist killserver kunzip kwyzipper kzip monitor winsum ../../$(RCSSBASE)/bin
+	cd keepaway-0.6/tools && cp hist killserver kunzip kwyzipper kzip monitor winsum $(RCSSBASE)/bin
 
 player:
 	cd keepaway-0.6/player && make
