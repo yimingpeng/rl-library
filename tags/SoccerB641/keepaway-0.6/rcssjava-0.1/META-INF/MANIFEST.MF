@@ -1,0 +1,2 @@
+Class-Path: antlrall.jar
+Main-Class: rcssjava/trainer/Trainer
