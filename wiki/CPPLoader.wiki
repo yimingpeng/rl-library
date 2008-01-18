@@ -4,7 +4,7 @@
 
 The C/C++ Agent and Environment loaders are now working, so I'm going to use this space to explain some things to know.
 
-=HowTo=
+=How To=
 
   * C/C++ Agent and Environment loading can be turned on and off through environment variables CPPAgent=true or CPPEnv=true
 
