@@ -1,4 +1,5 @@
 #summary RL-Library Documentation
+#labels Featured
 
 Thank you for downloading/using RL-Library
 ----
@@ -82,6 +83,10 @@ Some main features:
   * Allows run-time configuration (setting parameters) of agents and environments
 
 RL-Viz is currently used for the [http://rl-competition.org Reinforcement Learning Competition 2008].
+
+=== How they Fit Together ===
+Many of the components in the RL-Library have been created offer additional features if used through RL-Viz.  To the end user, RL-Viz can be easier to use than RL-Glue because it tries to automate some aspects of running RL-Glue experiments.  In any case, RL-Viz is a strict addition to RL-Glue, so anything built for RL-Viz can be used without it. 
+
 ----
 
 = Licensing =
