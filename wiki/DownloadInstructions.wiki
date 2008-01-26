@@ -1,0 +1,9 @@
+#summary Temporary Download Instructions
+
+= Sorry - Use Subversion for now =
+
+For now we don't have any prepackaged downloads, you have to use subversion.  We'll fix this real soon.
+
+{{{
+svn checkout http://rl-library.googlecode.com/svn/tags/versions/stable/ rl-library
+}}}
