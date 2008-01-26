@@ -10,7 +10,22 @@ RL-Library is a collection of open-source agents, environments, and experiments 
 The idea is that by providing these agent, environments, and experiments to the community, we can largely eliminate the pain in the neck of re-implementing each other's hard work all the time, and facilitate more accurate and effective comparisons between methods by using a shared code library.
 
 ----
+=Getting the Code=
 
+The easiest way is just to download the code from the [http://code.google.com/p/rl-library/downloads/list downloads page].
+
+A *better way* would be to check it out of subversion, so you can do `svn update` to get the latest fixes + features (since we're still early in the lifetime of this project).
+ 
+You can either check out the latest stable version from subversion:
+{{{
+svn checkout http://rl-library.googlecode.com/svn/tags/versions/stable/ rl-library
+}}}
+
+If you would like to contribute to this project, you can become a member and commit to the repository, or submit files via e-mail to the organizers.
+
+
+
+---
 
 =Hyper Quick Start=
 
