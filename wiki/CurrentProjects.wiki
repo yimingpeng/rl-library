@@ -1,0 +1,12 @@
+#summary List of Projects in RL-Library
+#labels Featured
+
+= Environments = 
+  * [http://code.google.com/p/rl-library/wiki/MountainCar Mountain Car]
+  * [http://code.google.com/p/rl-library/wiki/Tetris Tetris]
+
+= Agents = 
+  * [http://code.google.com/p/rl-library/wiki/RandomAgent RandomAgent]
+
+= Experimental = 
+A continuous grid world and a manual control agent.  Neither are fit for use yet.
