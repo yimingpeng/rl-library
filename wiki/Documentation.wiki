@@ -1,12 +1,36 @@
 #summary RL-Library Documentation
-= Introduction =
 
-Add your content here.
+Thank you for downloading/using RL-Library
+---
 
 
-= Details =
+== Licensing ==
+Each project in here is licensed independently.  I know the Google Code project says Apache License 2.0.  That's not project wide.
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+This is a complex topic.  We (Brian Tanner, Adam White, Rich Sutton, etc. at the University of Alberta) have created this Google Code project called 'rl-library'.  We
+are putting all of the infrastructure code out under Apache License 2.0.  I'm not going to explain Apache License 2.0 in detail, because I don't always get it myself, but the point is that it means that you can redistribute that code or any derivative of it without must restriction.  I think you have to give us credit.
+
+Google Code technically says that all parts of a project should be under the same license.  That's not really going to work for us, and I hope they're not upset about it.
+
+Instead, it goes like this: each sub-project (agent/environment/experiment) within the rl-library can be released under whatever open-source license the authors would like.  If someone wants to make their code completely free (no terms, just use and enjoy), while someone else would like to use the GPL, I'm saying that's fine.  It just
+means that if you want to use some code, you should look at the license and notices that are explained at the top level of that project.
+
+If you would like to use some of the work here under a different license than is offered, you can work that out with the original author, provided that you can get in contact with them.
+
+Sorry that this has to be complicated.
+
+==Hyper Quick Start==
+
+If you just want to see something happen without learning anything about what's in this package, do:
+{{{
+$> cd scripts
+$> bash runNet.bash
+}}}
+
+*Note:* This is a graphical demo and will only work if you can display a graphical Java window!
+
+This will run the graphical experiment program with all of the Java agents and environments currently in rl-library.
+
+There are also sample experiments that you can run in projects/experiments
+
+Please read the rest of this document to learn what that means and what other things you can do!
