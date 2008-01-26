@@ -77,9 +77,9 @@ Every agent, environment, and experiment in here should *hopefully* be compatibl
 
 Some main features:
 
-* Supports visualization of agents and environments
-* Allows run-time selection of agents and environments 
-* Allows run-time configuration (setting parameters) of agents and environments
+  * Supports visualization of agents and environments
+  * Allows run-time selection of agents and environments 
+  * Allows run-time configuration (setting parameters) of agents and environments
 
 RL-Viz is currently used for the [http://rl-competition.org Reinforcement Learning Competition 2008].
 ----
@@ -96,4 +96,5 @@ Instead, it goes like this: each sub-project (agent/environment/experiment) with
 If you would like to use some of the work here under a different license than is offered, you can work that out with the original author, provided that you can get in contact with them.
 
 Sorry that this has to be complicated.
+
 ----
