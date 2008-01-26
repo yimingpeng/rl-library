@@ -16,6 +16,7 @@ Instead, it goes like this: each sub-project (agent/environment/experiment) with
 If you would like to use some of the work here under a different license than is offered, you can work that out with the original author, provided that you can get in contact with them.
 
 Sorry that this has to be complicated.
+----
 
 ==Hyper Quick Start==
 
@@ -32,3 +33,35 @@ This will run the graphical experiment program with all of the Java agents and e
 There are also sample experiments that you can run in projects/experiments
 
 Please read the rest of this document to learn what that means and what other things you can do!
+----
+
+==Installation==
+In theory, RL-Library is an effort that has been created by a variety of authors on a variety of platforms.  We're trying as much as possible to enforce standards and set things up in as flexible a way as possible, but it won't always work.  
+
+We use two build systems (so far) on this project, [http://ant.apache.org/ Apache Ant] and [http://www.gnu.org/software/make/ Make].  The core C/C++ stuff uses Make and the Java stuff all uses Ant.  We consider Ant our primary build system because we have it setup so that Ant can call Make, but not vice versa.
+
+Anyway, to rebuild the Java stuff you need Ant, but you shouldn't need to rebuild the Java stuff if you don't want to.
+
+
+
+===RL-Glue===
+Can be built from Ant or Make:
+
+{{{
+$> make rl-glue
+}}}
+or
+{{{
+$>ant rl-glue
+}}}
+
+===Java Environments and Agents===
+
+All of the Java agents and environments should already be compiled into jar files that live in `rl-library/system/dist`.  Java class files and .jar package files really are cross-platform compatible, so when you download rl-library you get them out of the box for free.
+
+To rebuild all of the Java projects, test them, generate their [http://en.wikipedia.org/wiki/Javadoc JavaDocs], and build rl-glue:
+
+{{{
+$> ant all
+}}}
+
