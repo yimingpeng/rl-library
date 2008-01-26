@@ -1,0 +1,29 @@
+#summary Information about the sample experiments.
+
+= Introduction =
+
+There are currently two sample experiment projects, that can be found in:
+
+  * `rl-library/projects/experiments/sampleExperimentRLGlue`
+  * `rl-library/projects/experiments/sampleExperimentRLViz`
+
+Each of these experiments can be run by going into the appropriate directory and running the bash script in there:
+
+{{{
+$> cd projects/experiments/sampleExperimentRLGlue
+$> bash run.bash
+}}}
+
+Be sure that you have first built rl-glue in the main rl-library directory either by
+{{{
+$> make rl-glue
+}}}
+
+or
+{{{
+$> ant rl-glue
+}}}
+
+
+= Experiment Details =
+Details about the experiments are in the README files in each experiment.  Basically, they each run a small number of episodes on an environment. The RL-Viz experiment can choose the environment and agent at runtime, by sending appropriate message the the environmentShell and the agentShell.
