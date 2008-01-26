@@ -4,7 +4,7 @@ Thank you for downloading/using RL-Library
 ----
 
 
-== Licensing ==
+= Licensing =
 Each project in here is licensed independently.  I know the Google Code project says Apache License 2.0.  That's not project wide.
 
 This is a complex topic.  We (Brian Tanner, Adam White, Rich Sutton, etc. at the University of Alberta) have created this Google Code project called 'rl-library'.  We are putting all of the infrastructure code out under Apache License 2.0.  I'm not going to explain Apache License 2.0 in detail, because I don't always get it myself, but the point is that it means that you can redistribute that code or any derivative of it without must restriction.  I think you have to give us credit.
@@ -18,7 +18,7 @@ If you would like to use some of the work here under a different license than is
 Sorry that this has to be complicated.
 ----
 
-==Hyper Quick Start==
+=Hyper Quick Start=
 
 If you just want to see something happen without learning anything about what's in this package, do:
 {{{
@@ -35,7 +35,7 @@ There are also sample experiments that you can run in projects/experiments
 Please read the rest of this document to learn what that means and what other things you can do!
 ----
 
-==Installation==
+=Installation=
 In theory, RL-Library is an effort that has been created by a variety of authors on a variety of platforms.  We're trying as much as possible to enforce standards and set things up in as flexible a way as possible, but it won't always work.  
 
 We use two build systems (so far) on this project, [http://ant.apache.org/ Apache Ant] and [http://www.gnu.org/software/make/ Make].  The core C/C++ stuff uses Make and the Java stuff all uses Ant.  We consider Ant our primary build system because we have it setup so that Ant can call Make, but not vice versa.
@@ -44,7 +44,7 @@ Anyway, to rebuild the Java stuff you need Ant, but you shouldn't need to rebuil
 
 
 
-===RL-Glue===
+==RL-Glue==
 Can be built from Ant or Make:
 
 {{{
@@ -55,7 +55,7 @@ or
 $>ant rl-glue
 }}}
 
-===Java Environments and Agents===
+==Java Environments and Agents==
 
 All of the Java agents and environments should already be compiled into jar files that live in `rl-library/system/dist`.  Java class files and .jar package files really are cross-platform compatible, so when you download rl-library you get them out of the box for free.
 
@@ -64,4 +64,3 @@ To rebuild all of the Java projects, test them, generate their [http://en.wikipe
 {{{
 $> ant all
 }}}
-
