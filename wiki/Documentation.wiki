@@ -105,9 +105,9 @@ Sorry that this has to be complicated.
 ----
 
 = Credits = 
-[http://brian.tannerpages.com Brian Tanner]
-[http://http://www.adamwhite.ca/ Adam White]
-Mark Lee
-Andrew Butcher
-Matthew Radkie
-Leah Hackman
+  * [http://brian.tannerpages.com Brian Tanner]
+  * [http://http://www.adamwhite.ca/ Adam White]
+  * Mark Lee
+  * Andrew Butcher
+  * Matthew Radkie
+  * Leah Hackman
