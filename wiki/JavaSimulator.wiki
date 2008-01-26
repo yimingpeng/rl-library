@@ -1,5 +1,5 @@
 #summary This wiki page will document our progress on a Java Keep-away simulator.
-#labels Featured,Phase-Design
+#labels Phase-Design
 = Introduction =
 
 Basically, we have the simulator in Java that is a direct as possible port of the soccer code from Mat Buckland's book, Progamming Game AI by Example.
