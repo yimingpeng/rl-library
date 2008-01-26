@@ -2,4 +2,4 @@
 
 = Introduction =
 
-Mountain Car Details go here.
+A project in the RL-Library.  More information will go here soon.
