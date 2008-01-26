@@ -9,7 +9,7 @@ We're looking for more domains, and we're looking for people interested in shapi
 Currently, the rl-library is currently being run by the Reinforcement Learning and Artificial Intelligence (RLAI) group at the University of Alberta.
 
   * [http://brian.tannerpages.com Brian Tanner], Ph.D Student with Rich Sutton
-  * [http://http://adamwhite.ca] Adam White, Ph.D Student with Rich Sutton
+  * [http://adamwhite.ca Adam White], Ph.D Student with Rich Sutton
   * Mark Lee, RLAI Staff Programmer
   * Matt Radkie, RLAI Student Intern
 
