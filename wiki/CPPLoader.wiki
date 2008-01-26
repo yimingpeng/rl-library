@@ -1,5 +1,4 @@
 #summary This is a discussion about some of the design decisions for the C/C++ agent and environment loaders.
-#labels Featured
 
 
 The C/C++ Agent and Environment loaders are now working, so I'm going to use this space to explain some things to know.
