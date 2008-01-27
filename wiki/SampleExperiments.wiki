@@ -35,5 +35,10 @@ The RL-Viz experiment can choose the environment and agent at runtime, by sendin
 
 There is optional code in that experiment to set the flag of `randomStartStates` in Mountain Car, as a quick example of runtime configuration.
 
+= Running An Experiment = 
 
+Go into the appropriate directory and:
+{{{
+$> bash run.bash
+}}}
 
