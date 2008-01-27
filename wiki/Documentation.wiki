@@ -39,7 +39,9 @@ $> bash runNet.bash
 
 This will run the graphical experiment program with all of the Java agents and environments currently in rl-library.
 
-There are also sample experiments that you can run in projects/experiments
+There are also sample experiments that you can run in `projects/experiments`
+
+More information at [SampleExperiments].
 
 Please read the rest of this document to learn what that means and what other things you can do!
 ----
