@@ -1,4 +1,5 @@
 #summary Information about the sample experiments.
+#labels Featured
 
 = Introduction =
 
@@ -26,4 +27,13 @@ $> ant rl-glue
 
 
 = Experiment Details =
-Details about the experiments are in the README files in each experiment.  Basically, they each run a small number of episodes on an environment. The RL-Viz experiment can choose the environment and agent at runtime, by sending appropriate message the the environmentShell and the agentShell.
+Details about the experiments are in the README files in each experiment.  Basically, they each run a small number of episodes on an environment.
+
+The RL-Glue experiment script runs an agent and environment outside of the experiment java program.  Alternatively, any rl-glue agent and environment could be started manually.  The experiment java program has no control over what agents and environments are being used and how they are configured.
+
+The RL-Viz experiment can choose the environment and agent at runtime, by sending appropriate message the the environmentShell and the agentShell.  If you run the program it will tell you what environments and agents are available.
+
+There is optional code in that experiment to set the flag of `randomStartStates` in Mountain Car, as a quick example of runtime configuration.
+
+
+
