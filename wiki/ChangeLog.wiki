@@ -1,0 +1,4 @@
+#summary Major/Minor Changes to RL-Library should be noted here.
+#labels Featured
+= Release .14 Beta =
+  * Set Mountain Car by default NOT to use random start states.
