@@ -8,6 +8,7 @@
   * Move scripts/runNet.bash into projects/experiments/guiExperiment/
      * Split runNet.bash into two scripts, one that dynamically loads env/agents and one that doesn't dynamically load the agent (as above)
   * Updated main README.rtf to this effect
+  * Added run.bash script to the Random Java Agent so it can be started on it's own
 
 = Release .14 Beta =
   * Set Mountain Car by default NOT to use random start states.
