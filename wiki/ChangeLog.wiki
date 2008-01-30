@@ -1,4 +1,13 @@
 #summary Major/Minor Changes to RL-Library should be noted here.
 #labels Featured
+= Release .15 Beta =
+  * Added Random Python Agent in projects/agents/randomAgentPython
+  * Split the sampleExperimentRLViz run.bash script into 2 scripts
+     * One of the scripts runs with dynamic env/agent loading as before
+     * The other loads an environment dynamically but lets you run whatever agent you want
+  * Move scripts/runNet.bash into projects/experiments/guiExperiment/
+     * Split runNet.bash into two scripts, one that dynamically loads env/agents and one that doesn't dynamically load the agent (as above)
+  * Updated main README.rtf to this effect
+
 = Release .14 Beta =
   * Set Mountain Car by default NOT to use random start states.
