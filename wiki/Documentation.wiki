@@ -16,7 +16,7 @@ The easiest way is just to download the code from the [http://code.google.com/p/
 
 A *better way* would be to check it out of subversion, so you can do `svn update` to get the latest fixes + features (since we're still early in the lifetime of this project).
  
-You can either check out the latest stable version from subversion:
+You can check out the latest stable version from subversion:
 {{{
 svn checkout http://rl-library.googlecode.com/svn/tags/versions/stable/ rl-library
 }}}
