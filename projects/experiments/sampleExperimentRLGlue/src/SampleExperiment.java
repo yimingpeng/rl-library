@@ -16,7 +16,7 @@ http://brian.tannerpages.com
  limitations under the License.
 */
 import rlglue.RLGlue;
-import rlglue.types.*;
+import org.rlcommunity.rlglue.codec.types.*;
 import java.io.IOException;
 
 public class SampleExperiment
