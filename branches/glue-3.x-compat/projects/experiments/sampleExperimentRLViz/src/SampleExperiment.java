@@ -15,7 +15,7 @@ http://brian.tannerpages.com
  See the License for the specific language governing permissions and
  limitations under the License.
 */
-import rlglue.RLGlue;
+import org.rlcommunity.rlglue.codec.RLGlue;
 import org.rlcommunity.rlglue.codec.types.*;
 import java.io.IOException;
 import java.util.Vector;
