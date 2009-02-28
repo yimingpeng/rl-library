@@ -1,6 +1,8 @@
 #summary This is the page for download information and details about the Java Mountain Car Domain.
-#labels Language-Java,Type-Environment
+#labels Language-Java,Type-Environment,Page-Download
 #sidebar Downloads
+
+
 <wiki:comment>
 This README.txt is also the Wiki page that is hosted online at:
 http://code.google.com/p/rl-library/wiki/MountainCarJava
@@ -42,9 +44,11 @@ RL-Viz library jar file is in the appropriate relative location from
 where you put MountainCar.jar.  The location is:
 ../system/common/libs/rl-viz/RLVizLib.jar
 
-== Other Info ==
+== Getting Help ==
+Please send all questions to either the current maintainer (below) or to the 
+[http://groups.google.com/group/rl-library RL-Library mailing list].
 
-=== Authors === 
+== Authors ==
 Various, over the years, including:
  * [http://richsutton.com Richard S. Sutton]
  * [http://adamwhite.ca Adam White]
