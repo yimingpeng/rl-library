@@ -1,3 +1,6 @@
+#summary This is the page for download information and details about the Java Mountain Car Domain.
+#labels Language-Java,Type-Environment
+#sidebar Downloads
 <wiki:comment>
 This README.txt is also the Wiki page that is hosted online at:
 http://code.google.com/p/rl-library/wiki/MountainCarJava
@@ -5,11 +8,6 @@ http://code.google.com/p/rl-library/wiki/MountainCarJava
 So, it is in Wiki Syntax.  It's still pretty easy to read.
 </wiki:comment>
 
-#summary This is the page for download information and details about the Java Mountain Car Domain.
-
-#labels Language-Java,Type-Environment
-
-#sidebar Downloads
 
 = RL-Library Java Version of Mountain Car =
 
