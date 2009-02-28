@@ -4,8 +4,11 @@ http://code.google.com/p/rl-library/wiki/MountainCarJava
 
 So, it is in Wiki Syntax.  It's still pretty easy to read.
 </wiki:comment>
+
 #summary This is the page for download information and details about the Java Mountain Car Domain.
+
 #labels Language-Java,Type-Environment
+
 #sidebar Downloads
 
 = RL-Library Java Version of Mountain Car =
