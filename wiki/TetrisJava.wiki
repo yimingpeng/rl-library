@@ -1,4 +1,4 @@
-#summary This is the page for download information and details about the Java Mountain Car Domain.
+#summary This is the page for download information and details about the Java Tetris Domain.
 #labels Language-Java,Type-Environment,Page-Download
 #sidebar Downloads
 
@@ -16,7 +16,7 @@ So, it is in Wiki Syntax.  It's still pretty easy to read.
 For full details, please visit:
 [http://library.rl-community.org/environments/tetris]
 
-Download Link: [http://rl-library.googlecode.com/files/Tetris-Java-R1037.tar.gz Tetris-Java-R1037.tar.gz] [http://code.google.com/p/rl-library/downloads/detail?name=Tetris-Java-R1037.tar.gz (Details)]
+Download Link: [http://rl-library.googlecode.com/files/Tetris-Java-R1039.tar.gz Tetris-Java-R1039.tar.gz] [http://code.google.com/p/rl-library/downloads/detail?name=Tetris-Java-R1039.tar.gz (Details)]
 
 This environment is licensed under the Apache 2.0 License.
 See LICENSE.txt for details.
