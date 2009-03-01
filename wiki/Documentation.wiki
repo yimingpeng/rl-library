@@ -1,8 +1,11 @@
 #summary RL-Library Documentation
 #labels Featured
-
 Thank you for downloading/using RL-Library.
-----
+
+
+= THIS DOCUMENT IS OUT OF DATE = 
+I'm writing this note on March 1st, 2009.  We'll be creating some basic docs to get you started very shortly.  For now, some of the details in here will be useful, but not all. Sorry.
+
 ----
 = What's an RL-Library?=
 RL-Library is a collection of open-source agents, environments, and experiments that are compatible with the [http://code.google.com/p/rl-glue/ RL-Glue] reinforcement learning interface implementation.
