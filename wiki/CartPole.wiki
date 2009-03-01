@@ -1,5 +1,0 @@
-#summary Cart Pole Details Page.
-
-= Introduction =
-
-TODO
