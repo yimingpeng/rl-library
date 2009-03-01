@@ -1,5 +1,0 @@
-#summary RandomAgent
-
-= Introduction =
-
-A project in the RL-Library.  More information will go here soon.
