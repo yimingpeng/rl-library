@@ -1,5 +1,5 @@
 #summary This is the page for download information and details about the Java Tetris Domain.
-#labels Language-Java,Type-Environment,Page-Download
+#labels Language-Java,Type-Environment,Page-Download,Featured
 #sidebar Downloads
 
 
@@ -59,6 +59,4 @@ Various, over the years, including:
  * [http://research.tannerpages.com Brian Tanner]
  * btanner@rl-community.org
  * [http://research.tannerpages.com]
-
-
 
