@@ -16,7 +16,7 @@ So, it is in Wiki Syntax.  It's still pretty easy to read.
 For full details, please visit:
 [http://library.rl-community.org/environments/acrobot]
 
-Download Link: [http://rl-library.googlecode.com/files/Acrobot-Java-R1051.tar.gz Acrobot-Java-R1051.tar.gz] [http://code.google.com/p/rl-library/downloads/detail?name=Acrobot-Java-R1051.tar.gz (Details)]
+Download Link: [http://rl-library.googlecode.com/files/Acrobot-Java-R1053.tar.gz Acrobot-Java-R1053.tar.gz] [http://code.google.com/p/rl-library/downloads/detail?name=Acrobot-Java-R1053.tar.gz (Details)]
 
 This environment is licensed under the Apache 2.0 License.
 See LICENSE.txt for details.
