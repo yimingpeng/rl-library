@@ -1,5 +1,7 @@
-#summary This is the page for download information and details about the Java Mountain Car Domain, Version: r1131.
+#summary This is the page for download information and details about the Java Mountain Car Domain, Version: r1156.
 #labels Language-Java,Type-Environment,Page-Download
+#sidebar EnvironmentSidebar
+
 
 <wiki:comment>
 This README.txt is also the Wiki page that is hosted online at:
@@ -16,7 +18,7 @@ So, it is in Wiki Syntax.  It's still pretty easy to read.
 For full details, please visit:
 [http://library.rl-community.org/environments/mountaincar]
 
-Download Link: [http://rl-library.googlecode.com/files/MountainCar-Java-R1131.tar.gz MountainCar-Java-R1131.tar.gz] [http://code.google.com/p/rl-library/downloads/detail?name=MountainCar-Java-R1131.tar.gz (Details)]
+Download Link: [http://rl-library.googlecode.com/files/MountainCar-Java-R1156.tar.gz MountainCar-Java-R1156.tar.gz] [http://code.google.com/p/rl-library/downloads/detail?name=MountainCar-Java-R1156.tar.gz (Details)]
 
 This project is licensed under the Apache 2.0 License.
 See LICENSE.txt for details.
@@ -40,19 +42,19 @@ to the next section.
 {{{
 #First, download the file.  Depending on your platform, you might have to do this manually with a web browser. 
 
-#If you are on Linux, you can use wget which will download MountainCar-Java-R1131.tar.gz for you
-wget http://rl-library.googlecode.com/files/MountainCar-Java-R1131.tar.gz
+#If you are on Linux, you can use wget which will download MountainCar-Java-R1156.tar.gz for you
+wget http://rl-library.googlecode.com/files/MountainCar-Java-R1156.tar.gz
 
 #Copy the download to your local rl-library folder (whatever it is called)
-cp MountainCar-Java-R1131.tar.gz rl-library/
+cp MountainCar-Java-R1156.tar.gz rl-library/
 cd rl-library
 
 #This will add any project-specific things necessary to system and products folders
 #It will also create a folder for this particular project
-tar -zxf MountainCar-Java-R1131.tar.gz
+tar -zxf MountainCar-Java-R1156.tar.gz
 
 #Clean up
-rm MountainCar-Java-R1131.tar.gz
+rm MountainCar-Java-R1156.tar.gz
 }}}
 
 == Compiling This Project ==
@@ -62,7 +64,7 @@ You don't have to compile this, because the JAR file has been compiled
 and placed into the products directory already. However, if you want to 
 make changes and recompile, you can simply type:
 {{{
->$ cd MountainCar-Java-R1131
+>$ cd MountainCar-Java-R1156
 >$ ant clean
 
 #this will update ../products/MountainCar.jar
@@ -95,4 +97,6 @@ Various, over the years, including:
  * [http://research.tannerpages.com Brian Tanner]
  * btanner@rl-community.org
  * [http://research.tannerpages.com]
+
+
 
