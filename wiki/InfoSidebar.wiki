@@ -1,6 +1,6 @@
 #summary RL-Library info pages.
 
-== Tutorials ==
+= Tutorials =
 === [GettingStarted Getting Started] ===
 This tutorial explains how to download different projects from RL-Library and combine them together to run your own experiments.
 
