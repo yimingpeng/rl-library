@@ -1,6 +1,9 @@
 #summary Information about the sample experiments.
 #labels Featured
 
+= This page is a bit out of date =
+Posting this March 1 2009.  Check out the [GettingStarted getting started guide] for up to date information.
+
 = Introduction =
 
 There are currently two sample experiment projects, that can be found in:
