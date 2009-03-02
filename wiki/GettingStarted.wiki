@@ -51,11 +51,19 @@ tar -zxf MountainCar-Java-R1088.tar.gz
 rm MountainCar-Java-R1088.tar.gz
 }}}
 
-Ok, at this point, if you look at what you have, you'll have something like:
+Ok, at this point, if you look at what you have in the rl-library directory, you'll see something like the following:
 
-= Details =
+  * MountainCar-Java-R1088 
+     * build.xml
+     * LICENSE.txt
+     * README.txt
+     * src (I'll spare you the details of what's in here)
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+  * products
+     * MountainCar.jar
+  * system
+     * common
+       * ant
+          * more stuff here...
+       * libs
+          * more stuff here...
