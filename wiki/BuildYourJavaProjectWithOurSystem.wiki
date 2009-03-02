@@ -67,3 +67,7 @@ This will download a few different files. Your directory structure afterwards wi
          * *scripts* (more below)
 
 Now we want to download a copy of the [http://ant.apache.org/ ant] `build.xml` file.  If you've worked with `Makefiles` before, `build.xml` is like a `Makefile` for Java.
+
+{{{
+cp system/common/ant/sample-build.xml build.xml
+}}}
