@@ -155,7 +155,7 @@ At the end of these steps, you will see some new things have been added to your 
      * LICENSE.txt
      * README.txt
      * src (and more below)
-  * RandomAgent-Java-R1093*
+  * RandomAgent-Java-R1093
      * build.xml
      * LICENSE.txt
      * README.txt
