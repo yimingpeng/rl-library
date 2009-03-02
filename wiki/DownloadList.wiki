@@ -1,4 +1,4 @@
-= Available Downloads =
+= Downloads =
 
 == Environments ==
  * AcrobotJava
