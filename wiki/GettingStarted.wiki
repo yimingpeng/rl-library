@@ -132,3 +132,37 @@ And you would see the familiar Java RL-Glue Codec startup lines:
 RL-Glue Java Agent Codec Version: 2.05 (Build:793M)
 	Connecting to 127.0.0.1 on port 4096...
 }}}
+
+== Adding An Experiment ==
+Now that we have an agent and an environment, lets download an experiment and actually run something!
+
+For this guide, we'll download the [SampleExperimentRLGlueJava sample experiment for RL-Glue in Java].  This experiment has hard-coded references to the [MountainCarJava] and [RandomAgentJava] projects, so it will keep life easy for us.
+
+{{{
+cd rl-library
+#If you are on Linux, you can use wget which will download SampleExperimentRLGlue-Java-R1068.tar.gz for you
+wget http://rl-library.googlecode.com/files/SampleExperimentRLGlue-Java-R1068.tar.gz
+
+tar -zxf SampleExperimentRLGlue-Java-R1068.tar.gz
+
+#Clean up
+rm SampleExperimentRLGlue-Java-R1068.tar.gz
+}}}
+
+At the end of these steps, you will see some new things have been added to your rl-library directory structure (new things are *bold*):
+  * MountainCar-Java-R1088 
+     * build.xml
+     * LICENSE.txt
+     * README.txt
+     * src (and more below)
+  * RandomAgent-Java-R1093*
+     * build.xml
+     * LICENSE.txt
+     * README.txt
+     * src (and more below)
+
+  * *SampleExperimentRLGlue-Java-R1068*
+     * *README.txt*
+     * *run.bash*
+     * *src*
+       * *SampleExperiment.java*
