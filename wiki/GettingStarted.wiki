@@ -212,3 +212,8 @@ Average return per episode: -9424.7
 }}}
 
 As you can see, the RandomAgentJava is not very good at Mountain Car!
+
+= Beyond This Guide = 
+This is a very simple, quick-start guide to see how you can leverage the existing projects in the RL-Library.  In the near future, we will publish a guide with some more fancy examples, including one that runs in *internal* mode, without network sockets (much faster per step).
+
+We will also be publishing detailed instructions about how you can get your own projects building with the RL-Library build system, and how you can make them available through this project even if the source code is hosted elsewhere.
