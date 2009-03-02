@@ -1,6 +1,6 @@
 = Available Downloads =
 
-== [ExperimentSidebar Experiments] ==
+== Experiments ==
  * [SampleExperimentRLGlueJava]
 
 == [AgentSidebar Agents] ==
@@ -12,4 +12,3 @@
  * HelicopterJava
  * MountainCarJava
  * TetrisJava
-
