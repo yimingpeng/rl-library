@@ -23,6 +23,13 @@ This project is licensed under the Apache 2.0 License.
 See LICENSE.txt for details.
 
 
+== Note :: You need Mountain Car and Random Agent to run this Experiment ==
+For this experiment to work properly, you must have the [MountainCarJava] and [RandomAgentJava] 
+projects downloaded and installed into your `rl-library/products` directory.  
+
+This experiment is actually part of the [GettingStartedGuide getting started guide], so please consult that document for full 
+details and explanation.
+
 == Using This Download ==
 Before diving into this, you may want to check out [GettingStarted the getting started guide].
 
@@ -56,30 +63,19 @@ tar -zxf SampleExperimentRLGlue-Java-R1068.tar.gz
 rm SampleExperimentRLGlue-Java-R1068.tar.gz
 }}}
 
-== Compiling This Project ==
-You must have ANT installed to build this project using these instructions.
+== Running This Experiment ==
+This experiment will automatically recompile itself each time you run it. 
 
-You don't have to compile this, because the JAR file has been compiled
-and placed into the products directory already. However, if you want to 
-make changes and recompile, you can simply type:
+To run it, simple execute the `run.bash` script that was bunded with the project.
+
 {{{
 >$ cd distbuild
->$ ant clean
+>$ bash run.bash
 
-#this will update ../products/$JARNAME$
->$ ant build
 }}}
 
-== Running This Project ==
-You can run this project by typing:
-{{{
->$ java -jar products/$JARNAME$
-}}}
-You can also use it in conjunction with RL-Library by putting the JAR file
-products/$JARNAME$ in the appropriate directory, as long as the 
-RL-Viz library jar file is in the appropriate relative location from
-where you put $JARNAME$.  The location is:
-../system/common/libs/rl-viz/RLVizLib.jar
+This will start up the agent, environment, and experiment program needed to run this example, and will also start the rl_glue executable socket server if necessary.
+
 
 == Getting Help ==
 Please send all questions to either the current maintainer (below) or to the 
