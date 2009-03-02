@@ -4,7 +4,7 @@
 
 <wiki:comment>
 This README.txt is also the Wiki page that is hosted online at:
-http://code.google.com/p/rl-library/wiki/MountainCarJava
+Environment
 
 So, it is in Wiki Syntax.  It's still pretty easy to read.
 </wiki:comment>
@@ -19,8 +19,9 @@ For full details, please visit:
 
 Download Link: [http://rl-library.googlecode.com/files/MountainCar-Java-R1077.tar.gz MountainCar-Java-R1077.tar.gz] [http://code.google.com/p/rl-library/downloads/detail?name=MountainCar-Java-R1077.tar.gz (Details)]
 
-This environment is licensed under the Apache 2.0 License.
+This project is licensed under the Apache 2.0 License.
 See LICENSE.txt for details.
+
 
 == Using This Download ==
 Before diving into this, you may want to check out [GettingStarted the getting started guide].
@@ -56,8 +57,9 @@ tar -zxf MountainCar-Java-R1077.tar.gz
 rm MountainCar-Java-R1077.tar.gz
 }}}
 
-== Compiling This Environment ==
-You must have ANT installed to build this environment using these instructions.
+
+== Compiling This Project ==
+You must have ANT installed to build this project using these instructions.
 
 You don't have to compile this, because the JAR file has been compiled
 and placed into the products directory already. However, if you want to 
@@ -67,8 +69,8 @@ make changes and recompile, you can simply type:
 >$ ant build
 }}}
 
-== Running This Environment ==
-You can run this environment by typing:
+== Running This Project ==
+You can run this project by typing:
 {{{
 >$ java -jar products/MountainCar.jar
 }}}
@@ -82,6 +84,7 @@ where you put MountainCar.jar.  The location is:
 == Getting Help ==
 Please send all questions to either the current maintainer (below) or to the 
 [http://groups.google.com/group/rl-library RL-Library mailing list].
+
 
 == Authors ==
 Various, over the years, including:
