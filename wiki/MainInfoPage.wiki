@@ -1,4 +1,5 @@
 #summary This is the main RL-Library Wiki page.
+#labels Page-Info
 #sidebar InfoSidebar
 
 = Introduction =
