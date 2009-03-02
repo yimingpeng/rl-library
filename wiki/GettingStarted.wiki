@@ -166,3 +166,49 @@ At the end of these steps, you will see some new things have been added to your 
      * *run.bash*
      * *src*
        * *SampleExperiment.java*
+
+Now, because MountainCarJava and RandomAgentJava are hard-coded into SampleExperimentRLGlueJava, we can run a simple experiment.
+
+{{{
+cd SampleExperimentRLGlue-Java-R1068
+bash run.bash
+}}}
+
+You should see something like the following:
+{{{
+Starting up RL-glue - PID=11954
+RL-Glue Version 3.0, Build 909
+RL-Glue is listening for connections on port=4096
+RL-Glue Java Agent Codec Version: 2.05 (Build:793M)
+	Connecting to 127.0.0.1 on port 4096...
+RL-Glue Java Environment Codec Version: 2.05 (Build:793M)
+	Connecting to 127.0.0.1 on port 4096...
+RL-Glue Java Experiment Codec Version: 2.06 (Build:801M)
+	Connecting to 127.0.0.1 on port 4096...
+	RL-Glue :: Agent connected.
+	Agent Codec Connected
+	RL-Glue :: Environment connected.
+	Environment Codec Connected
+	Experiment Codec Connected
+	RL-Glue :: Experiment connected.
+Running: 10 with a cutoff each of: 10000 steps.
+Episode: 1	 steps: 10000
+Episode: 2	 steps: 10000
+Episode: 3	 steps: 10000
+Episode: 4	 steps: 10000
+Episode: 5	 steps: 10000
+Episode: 6	 steps: 10000
+Episode: 7	 steps: 10000
+Episode: 8	 steps: 10000
+Episode: 9	 steps: 4257
+Episode: 10	 steps: 10000
+
+-----------------------------------------------
+
+Number of episodes: 10
+Average number of steps per episode: 9425.7
+Average return per episode: -9424.7
+-----------------------------------------------
+}}}
+
+As you can see, the RandomAgentJava is not very good at Mountain Car!
