@@ -1,4 +1,5 @@
 #summary How to build your own agent, environments, or experiment using the RL-Library build system.
+#labels Featured,Page-Info
 
 <wiki:toc />
 
@@ -43,7 +44,10 @@ mkdir src
 mkdir products
 }}}
 
-Now you have the basic structure for the project.  We'll grab the `common` directory from the RL-Library project, it has most of the magic scripts and libraries that we will need for our own project.
+Now you have the basic structure for the project.
+
+== Downloading the Common Files from RL-Library==
+We'll grab the `common` directory from the RL-Library project, it has most of the magic scripts and libraries that we will need for our own project.
 
 {{{
 #Download a copy of the common folder to our system folder
@@ -60,14 +64,81 @@ This will download a few different files. Your directory structure afterwards wi
            * *build-common.xml*
            * *build-targets.xml*
            * *predefined-target-aliases.xml*
+           * *sample-build.xml*
+
 
          * *libs* (more below)
            * *rl-glue-java* (more below)
            * *rl-viz* (more below)
          * *scripts* (more below)
 
-Now we want to download a copy of the [http://ant.apache.org/ ant] `build.xml` file.  If you've worked with `Makefiles` before, `build.xml` is like a `Makefile` for Java.
+
+== Getting the Source Code ==
+We are going to "borrow" the source code from the RandomAgentJava project in RL-Library.  However, we don't want all of the project, only the main source file.  We also want to use a different directory structure from that project, so that it's clear how the build scripts work.
+
+We'll call our Java package `com.examples`, and our class will be called `TutorialGuy`.
+
+First, make the directories:
+{{{
+mkdir src/com
+mkdir src/com/examples
+}}}
+
+Now, get the source file from RL-Library, but rename it to TutorialGuy.java.
+
+{{{
+svn export http://rl-library.googlecode.com/svn/trunk/projects/agents/randomAgentJava/src/org/rlcommunity/agents/random/RandomAgent.java src/com/examples/TutorialGuy.java
+}}}
+
+Now, unfortunately, the Random agent is actually a mildly complicated RL-Viz environment, so there is a bit of surgery to do:
+ * Change the package from org.rlcommunity.agents.random to com.examples
+ * In the class definition, change the class name from RandomAgent to TutorialGuy
+ * In the class definition, change it to NOT implement HasImageInterface
+ * Change both RandomAgent constructors to be TutorialGuy constructors
+ * Find the `public static void main(String[] args)` method, and make it so that inside the AgentLoader constructor you are making new TutorialGuy() and NOT new RandomAgent()
+ * Remove the `public URL getImageURL()` around line 150.
+ * Save :)
+
+
+== Getting build.xml ==
+Now we want a copy of the [http://ant.apache.org/ ant] `build.xml` file.  If you've worked with `Makefiles` before, `build.xml` is like a `Makefile` for Java.
 
 {{{
 cp system/common/ant/sample-build.xml build.xml
 }}}
+
+Now, lets edit `build.xml`.
+
+You should read through the comments carefully, they are hopefully useful.  The specific changes you should make:
+* Set project name to "TutorialGuy"
+* Set "baseLibraryDir" to "."
+* Set "main.package.name" to "com.examples/"
+* Set "java.main.class" to "com.examples.TutorialGuy"
+* Save!
+
+== Building Your Project ==
+Now, you should be able to type:
+{{{
+ant build
+}}}
+
+And, with a little luck, you now have a new `TutorialGuy.jar` file in the `products` folder.  Run run it!
+
+{{{
+java -jar products/TutorialGuy.jar
+}}}
+ 
+Output:
+{{{
+RL-Glue Java Agent Codec Version: 2.05 (Build:793M)
+	Connecting to 127.0.0.1 on port 4096...
+}}}
+
+Success!  Now you can give your Jar file to all of your friends to put in their RL-Library `products` folders to use your agent!  If you don't know what I'm talking about, please check out the [GettingStarted getting started guide].
+
+The process for building an environment is identical.
+
+= Going Further = 
+There are many more advanced things you can do with the RL-Library build system. Stay tuned for more!
+
+Also, we take requests!
