@@ -1,5 +1,9 @@
 #summary This is the getting started guide.
 
+*Table of Contents*
+<wiki:toc />
+----
+
 = Introduction =
 
 RL-Library is basically a large collection of agents, environments, experiments, and packages that have been shared by members of the reinforcement learning community.
