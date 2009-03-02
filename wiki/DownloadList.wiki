@@ -1,14 +1,14 @@
 = Downloads =
 
-== Environments ==
+== [Environment Sidebar Environments] ==
  * AcrobotJava
  * CartpoleJava
  * HelicopterJava
  * MountainCarJava
  * TetrisJava
 
-== Agent ==
+== [AgentSidebar Agents] ==
  * RandomAgentJava
 
-== Experiments ==
+== [ExperimentSidebar Experiments] ==
  * [SampleExperimentRLGlueJava]
