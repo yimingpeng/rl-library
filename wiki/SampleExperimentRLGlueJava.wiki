@@ -27,7 +27,7 @@ See LICENSE.txt for details.
 For this experiment to work properly, you must have the [MountainCarJava] and [RandomAgentJava] 
 projects downloaded and installed into your `rl-library/products` directory.  
 
-This experiment is actually part of the [GettingStartedGuide getting started guide], so please consult that document for full 
+This experiment is actually part of the [GettingStarted getting started guide], so please consult that document for full 
 details and explanation.
 
 == Using This Download ==
@@ -83,9 +83,6 @@ Please send all questions to either the current maintainer (below) or to the
 
 
 == Authors ==
-Various, over the years, including:
- * Mark Lee
- * Leah Hackman
  * [http://research.tannerpages.com Brian Tanner]
 
 === Current Maintainer ===
