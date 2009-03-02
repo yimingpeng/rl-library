@@ -29,17 +29,17 @@ Before diving into this, you may want to check out [GettingStarted the getting s
 This download can be used to augment your existing local RL-Library (if you have one), or as the basis to start a new one.
 
 === This Is Your First Project ===
-{{{
+<code language="bsh">
 #Create a directory for your rl-library. Call it whatever you like.
 mkdir rl-library
-}}}
+</code>
 
 That's all you have to do special for the *first time* you download a rl-library component.  Continue on now
 to the next section.
 
 === Adding To An Existing RL-Library Download ===
 
-{{{
+<code language="bsh">
 #First, download the file.  Depending on your platform, you might have to do this manually with a web browser. 
 
 #If you are on Linux, you can use wget which will download MountainCar-Java-R1081.tar.gz for you
@@ -55,8 +55,7 @@ tar -zxf MountainCar-Java-R1081.tar.gz
 
 #Clean up
 rm MountainCar-Java-R1081.tar.gz
-}}}
-
+</code>
 
 == Compiling This Project ==
 You must have ANT installed to build this project using these instructions.
@@ -64,19 +63,19 @@ You must have ANT installed to build this project using these instructions.
 You don't have to compile this, because the JAR file has been compiled
 and placed into the products directory already. However, if you want to 
 make changes and recompile, you can simply type:
-{{{
+<code language="bsh">
 >$ cd distbuild
 >$ ant clean
 
 #this will update ../products/MountainCar.jar
 >$ ant build
-}}}
+</code>
 
 == Running This Project ==
 You can run this project by typing:
-{{{
+<code language="bsh">
 >$ java -jar products/MountainCar.jar
-}}}
+</code>
 
 You can also use it in conjunction with RL-Library by putting the JAR file
 products/MountainCar.jar in the appropriate directory, as long as the 
