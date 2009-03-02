@@ -1,5 +1,6 @@
 #summary How to build your own agent, environments, or experiment using the RL-Library build system.
 #labels Featured,Page-Info
+#sidebar InfoSidebar
 
 <wiki:toc />
 
