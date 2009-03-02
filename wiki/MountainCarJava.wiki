@@ -1,4 +1,4 @@
-#summary This is the page for download information and details about the Java Mountain Car Domain, Version: r1081.
+#summary This is the page for download information and details about the Java Mountain Car Domain, Version: r1088.
 #labels Language-Java,Type-Environment,Page-Download
 #sidebar Downloads
 
@@ -17,7 +17,7 @@ So, it is in Wiki Syntax.  It's still pretty easy to read.
 For full details, please visit:
 [http://library.rl-community.org/environments/mountaincar]
 
-Download Link: [http://rl-library.googlecode.com/files/MountainCar-Java-R1081.tar.gz MountainCar-Java-R1081.tar.gz] [http://code.google.com/p/rl-library/downloads/detail?name=MountainCar-Java-R1081.tar.gz (Details)]
+Download Link: [http://rl-library.googlecode.com/files/MountainCar-Java-R1088.tar.gz MountainCar-Java-R1088.tar.gz] [http://code.google.com/p/rl-library/downloads/detail?name=MountainCar-Java-R1088.tar.gz (Details)]
 
 This project is licensed under the Apache 2.0 License.
 See LICENSE.txt for details.
@@ -29,33 +29,32 @@ Before diving into this, you may want to check out [GettingStarted the getting s
 This download can be used to augment your existing local RL-Library (if you have one), or as the basis to start a new one.
 
 === This Is Your First Project ===
-<code language="bsh">
+{{{
 #Create a directory for your rl-library. Call it whatever you like.
 mkdir rl-library
-</code>
-
+}}}
 That's all you have to do special for the *first time* you download a rl-library component.  Continue on now
 to the next section.
 
 === Adding To An Existing RL-Library Download ===
 
-<code language="bsh">
+{{{
 #First, download the file.  Depending on your platform, you might have to do this manually with a web browser. 
 
-#If you are on Linux, you can use wget which will download MountainCar-Java-R1081.tar.gz for you
-wget http://rl-library.googlecode.com/files/MountainCar-Java-R1081.tar.gz
+#If you are on Linux, you can use wget which will download MountainCar-Java-R1088.tar.gz for you
+wget http://rl-library.googlecode.com/files/MountainCar-Java-R1088.tar.gz
 
 #Copy the download to your local rl-library folder (whatever it is called)
-cp MountainCar-Java-R1081.tar.gz rl-library/
+cp MountainCar-Java-R1088.tar.gz rl-library/
 cd rl-library
 
 #This will add any project-specific things necessary to system and products folders
 #It will also create a folder for this particular project
-tar -zxf MountainCar-Java-R1081.tar.gz
+tar -zxf MountainCar-Java-R1088.tar.gz
 
 #Clean up
-rm MountainCar-Java-R1081.tar.gz
-</code>
+rm MountainCar-Java-R1088.tar.gz
+}}}
 
 == Compiling This Project ==
 You must have ANT installed to build this project using these instructions.
@@ -63,20 +62,19 @@ You must have ANT installed to build this project using these instructions.
 You don't have to compile this, because the JAR file has been compiled
 and placed into the products directory already. However, if you want to 
 make changes and recompile, you can simply type:
-<code language="bsh">
+{{{
 >$ cd distbuild
 >$ ant clean
 
 #this will update ../products/MountainCar.jar
 >$ ant build
-</code>
+}}}
 
 == Running This Project ==
 You can run this project by typing:
-<code language="bsh">
+{{{
 >$ java -jar products/MountainCar.jar
-</code>
-
+}}}
 You can also use it in conjunction with RL-Library by putting the JAR file
 products/MountainCar.jar in the appropriate directory, as long as the 
 RL-Viz library jar file is in the appropriate relative location from
