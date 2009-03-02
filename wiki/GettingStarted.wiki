@@ -88,13 +88,9 @@ Again, we'll follow the directions on that project's download page.
 
 {{{
 #We can skip creating the rl-library directory because we have it already
-
+cd rl-library
 #If you are on Linux, you can use wget which will download RandomAgent-Java-R1093.tar.gz for you
 wget http://rl-library.googlecode.com/files/RandomAgent-Java-R1093.tar.gz
-
-#Copy the download to your local rl-library folder
-cp RandomAgent-Java-R1093.tar.gz rl-library/
-cd rl-library
 
 tar -zxf RandomAgent-Java-R1093.tar.gz
 
@@ -102,4 +98,33 @@ tar -zxf RandomAgent-Java-R1093.tar.gz
 rm RandomAgent-Java-R1093.tar.gz
 }}}
 
-At the end of these steps, you will see some new things have been added to your rl-library directory structure:
+At the end of these steps, you will see some new things have been added to your rl-library directory structure (new things are *bold*):
+  * MountainCar-Java-R1088 
+     * build.xml
+     * LICENSE.txt
+     * README.txt
+     * src (and more below)
+  * *RandomAgent-Java-R1093*
+     * *build.xml*
+     * *LICENSE.txt*
+     * *README.txt*
+     * *src* (and more below)
+
+  * products
+     * MountainCar.jar
+     * *RandomAgent.jar*
+  * system
+     * common (more below)
+
+Now, we have both an environment *and* an agent in our products folder.  Using this same technique, we can pick and choose exactly what agents and environments we want from the rl-library.
+
+Like the environment, you should be able to run the agent:
+{{{
+java -jar products/RandomAgent.jar
+}}}
+
+And you would see the familiar Java RL-Glue Codec startup lines:
+{{{
+RL-Glue Java Agent Codec Version: 2.05 (Build:793M)
+	Connecting to 127.0.0.1 on port 4096...
+}}}
