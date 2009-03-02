@@ -1,5 +1,6 @@
 #summary This is the page for download information and details about the Java Random Agent Domain, Version: r1136.
 #labels Language-Java,Type-Agent,Page-Download
+#sidebar AgentSidebar
 
 <wiki:comment>
 This README.txt is also the Wiki page that is hosted online at:
@@ -95,5 +96,7 @@ Various, over the years, including:
  * [http://research.tannerpages.com Brian Tanner]
  * btanner@rl-community.org
  * [http://research.tannerpages.com]
+
+
 
 
