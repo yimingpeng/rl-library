@@ -1,6 +1,5 @@
 #summary This is the page for download information and details about the Java Helicopter Hovering Domain, Version: r1133.
 #labels Language-Java,Type-Environment,Page-Download
-#sidebar Downloads
 
 <wiki:comment>
 This README.txt is also the Wiki page that is hosted online at:
@@ -100,6 +99,4 @@ Various, over the years, including:
  * [http://research.tannerpages.com Brian Tanner]
  * btanner@rl-community.org
  * [http://research.tannerpages.com]
-
-
 
