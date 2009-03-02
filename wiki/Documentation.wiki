@@ -1,5 +1,4 @@
 #summary RL-Library Documentation
-#labels Featured
 Thank you for downloading/using RL-Library.
 
 
