@@ -3,7 +3,7 @@
 == Agents ==
  * RandomAgentJava
 
-== [EnvironmentSideBar Environments] ==
+== [EnvironmentSidebar Environments] ==
  * AcrobotJava
  * CartpoleJava
  * HelicopterJava
@@ -11,5 +11,5 @@
  * TetrisJava
 
 
-== [ExperimentSideBar Experiments] ==
+== [ExperimentSidebar Experiments] ==
  * [SampleExperimentRLGlueJava]
