@@ -1,4 +1,4 @@
-#This is a sidebar with links to available downloads
+= Available Downloads =
 
 == Environments ==
  * AcrobotJava
