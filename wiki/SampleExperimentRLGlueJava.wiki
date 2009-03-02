@@ -1,6 +1,5 @@
 #summary This is the page for download information and details about the Java RL-Glue Sample Experiment Domain, Version: r1137.
 #labels Language-Java,Type-Experiment,Page-Download
-#sidebar Downloads
 
 <wiki:comment>
 This README.txt is also the Wiki page that is hosted online at:
@@ -89,7 +88,5 @@ Please send all questions to either the current maintainer (below) or to the
  * [http://research.tannerpages.com Brian Tanner]
  * btanner@rl-community.org
  * [http://research.tannerpages.com]
-
-
 
 
