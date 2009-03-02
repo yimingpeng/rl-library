@@ -69,7 +69,7 @@ This experiment will automatically recompile itself each time you run it.
 To run it, simple execute the `run.bash` script that was bunded with the project.
 
 {{{
->$ cd distbuild
+>$ cd SampleExperimentRLGlue-Java-R1068
 >$ bash run.bash
 
 }}}
