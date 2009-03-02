@@ -2,7 +2,28 @@
 
 = Introduction =
 
-Add your content here.
+RL-Library is basically a large collection of agents, environments, experiments, and packages that have been shared by members of the reinforcement learning community.
+
+The main thread that links all of these projects together is that they are compatible with [http://glue.rl-community.org RL-Glue].
+
+There are several ways that you could potentially use the RL-Library. We have provided (and will explain below) our vision (the _cohesive view_) of how the different projects in RL-Library can be used together.
+
+However, you can do whatever you like.  You could, for example, just download a particular project so that you can see/improve/change its source code.
+
+= The Cohesive View of RL-Library =
+Right now, this only applies to Java projects, because that is mostly what we have in the RL-Library at the moment.
+
+Most Java projects in RL-Library rely on some common scripts, [http://ant.apache.org/ ant buildfiles], and libraries.  Instead of keeping separate copies of all these things in source control (which could be crazy):
+<code language="bsh">
+#Useful ant scripts go here
+rl-library/system/common/ant
+
+#Supporting Libraries (like RL-Glue and RL-Viz go here)
+rl-library/system/common/libs
+
+#The JAR files for built java agents/environments go here
+rl-library/products
+</code>
 
 
 = Details =
