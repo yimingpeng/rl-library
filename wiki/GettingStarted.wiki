@@ -1,4 +1,5 @@
 #summary This is the getting started guide.
+#labels Featured,Page-Info
 
 *Table of Contents*
 <wiki:toc />
