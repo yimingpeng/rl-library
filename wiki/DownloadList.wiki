@@ -11,4 +11,4 @@
  * RandomAgentJava
 
 == Experiments ==
- * SampleExperimentRLGlueJava
+ * [SampleExperimentRLGlueJava]
