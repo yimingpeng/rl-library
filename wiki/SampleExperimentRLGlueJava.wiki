@@ -1,5 +1,7 @@
-#summary This is the page for download information and details about the Java RL-Glue Sample Experiment Domain, Version: r1137.
+#summary This is the page for download information and details about the Java RL-Glue Sample Experiment Domain, Version: r1163.
 #labels Language-Java,Type-Experiment,Page-Download
+#sidebar ExperimentSidebar
+
 
 <wiki:comment>
 This README.txt is also the Wiki page that is hosted online at:
@@ -16,7 +18,7 @@ So, it is in Wiki Syntax.  It's still pretty easy to read.
 For full details, please visit:
 [http://code.google.com/p/rl-library/wiki/SampleExperimentRLGlueJava]
 
-Download Link: [http://rl-library.googlecode.com/files/SampleExperimentRLGlue-Java-R1137.tar.gz SampleExperimentRLGlue-Java-R1137.tar.gz] [http://code.google.com/p/rl-library/downloads/detail?name=SampleExperimentRLGlue-Java-R1137.tar.gz (Details)]
+Download Link: [http://rl-library.googlecode.com/files/SampleExperimentRLGlue-Java-R1163.tar.gz SampleExperimentRLGlue-Java-R1163.tar.gz] [http://code.google.com/p/rl-library/downloads/detail?name=SampleExperimentRLGlue-Java-R1163.tar.gz (Details)]
 
 This project is licensed under the Apache 2.0 License.
 See LICENSE.txt for details.
@@ -47,19 +49,19 @@ to the next section.
 {{{
 #First, download the file.  Depending on your platform, you might have to do this manually with a web browser. 
 
-#If you are on Linux, you can use wget which will download SampleExperimentRLGlue-Java-R1137.tar.gz for you
-wget http://rl-library.googlecode.com/files/SampleExperimentRLGlue-Java-R1137.tar.gz
+#If you are on Linux, you can use wget which will download SampleExperimentRLGlue-Java-R1163.tar.gz for you
+wget http://rl-library.googlecode.com/files/SampleExperimentRLGlue-Java-R1163.tar.gz
 
 #Copy the download to your local rl-library folder (whatever it is called)
-cp SampleExperimentRLGlue-Java-R1137.tar.gz rl-library/
+cp SampleExperimentRLGlue-Java-R1163.tar.gz rl-library/
 cd rl-library
 
 #This will add any project-specific things necessary to system and products folders
 #It will also create a folder for this particular project
-tar -zxf SampleExperimentRLGlue-Java-R1137.tar.gz
+tar -zxf SampleExperimentRLGlue-Java-R1163.tar.gz
 
 #Clean up
-rm SampleExperimentRLGlue-Java-R1137.tar.gz
+rm SampleExperimentRLGlue-Java-R1163.tar.gz
 }}}
 
 == Running This Experiment ==
@@ -68,7 +70,7 @@ This experiment will automatically recompile itself each time you run it.
 To run it, simple execute the `run.bash` script that was bunded with the project.
 
 {{{
->$ cd SampleExperimentRLGlue-Java-R1137
+>$ cd SampleExperimentRLGlue-Java-R1163
 >$ bash run.bash
 
 }}}
@@ -88,5 +90,7 @@ Please send all questions to either the current maintainer (below) or to the
  * [http://research.tannerpages.com Brian Tanner]
  * btanner@rl-community.org
  * [http://research.tannerpages.com]
+
+
 
 
