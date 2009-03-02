@@ -1,6 +1,6 @@
 #summary How to build your own agent, environments, or experiment using the RL-Library build system.
 
-<toc />
+<wiki:toc />
 
 = Introduction =
 This page will explain how you can either check-out or `svn:externals` the RL-Library system/common folder into your own projects (on your local computer or your own open-source project), to leverage some of the goodies that we use in the RL-Library build system.
@@ -67,4 +67,3 @@ This will download a few different files. Your directory structure afterwards wi
          * *scripts* (more below)
 
 Now we want to download a copy of the [http://ant.apache.org/ ant] `build.xml` file.  If you've worked with `Makefiles` before, `build.xml` is like a `Makefile` for Java.
-
