@@ -7,8 +7,8 @@
  * MountainCarJava
  * TetrisJava
 
-== [AgentSideBar Agents] ==
+== [AgentSidebar Agents] ==
  * RandomAgentJava
 
-== [ExperimentSideBar Experiments] ==
+== [ExperimentSidebar Experiments] ==
  * [SampleExperimentRLGlueJava]
