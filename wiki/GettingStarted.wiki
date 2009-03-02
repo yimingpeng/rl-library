@@ -18,13 +18,40 @@ Most Java projects in RL-Library rely on some common scripts, [http://ant.apache
 #Useful ant scripts go here
 rl-library/system/common/ant
 
-#Supporting Libraries (like RL-Glue and RL-Viz go here)
+#Supporting Libraries (like [http://glue.rl-community.org RL-Glue] and [http://rl-viz.googlecode.com RL-Viz] are kept here)
 rl-library/system/common/libs
 
 #The JAR files for built java agents/environments go here
 rl-library/products
 </code>
 
+When you download a Java project from the RL-Library, and you unpack it, it will give you these directories, plus a new directory specific for this project.
+
+== Example - Downloading Mountain Car==
+Let's say you are new to RL-Library, and you want to download [MountainCarJava Mountain Car], because everyone loves Mountain Car.
+
+You would go to the MountainCarJava download page, and follow the instructions.  At time of writing, you would do the following:
+{{{
+#Create a directory for your rl-library.
+mkdir rl-library
+
+#First, download the file.  Depending on your platform, you might have to do this manually with a web browser. 
+
+#If you are on Linux, you can use wget which will download MountainCar-Java-R1088.tar.gz for you
+wget http://rl-library.googlecode.com/files/MountainCar-Java-R1088.tar.gz
+
+#Copy the download to your local rl-library folder
+cp MountainCar-Java-R1088.tar.gz rl-library/
+cd rl-library
+
+#Unpack the project
+tar -zxf MountainCar-Java-R1088.tar.gz
+
+#Clean up
+rm MountainCar-Java-R1088.tar.gz
+}}}
+
+Ok, at this point, if you look at what you have, you'll have something like:
 
 = Details =
 
