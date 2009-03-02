@@ -1,6 +1,6 @@
 = Downloads =
 
-== [Environment Sidebar Environments] ==
+== [EnvironmentSidebar Environments] ==
  * AcrobotJava
  * CartpoleJava
  * HelicopterJava
