@@ -67,3 +67,39 @@ Ok, at this point, if you look at what you have in the rl-library directory, you
           * more stuff here...
        * libs
           * more stuff here...
+
+Now, if you wanted to run the Mountain Car environment with RL-Glue, you could type:
+{{{
+java -jar products/MountainCar.jar
+}}}
+
+And you would see the familiar Java RL-Glue Codec startup lines:
+{{{
+RL-Glue Java Environment Codec Version: 2.05 (Build:793M)
+	Connecting to 127.0.0.1 on port 4096...
+}}}
+
+I should not that all of this works even without the RL-Glue codec installed, because that codec is in the `system/common/libs` directory, and the `MountainCar.jar` has information in it's Manifest file that tells the environment where to look for it.
+
+== Adding an Agent ==
+Unfortunately, without an agent and experiment, `MountainCar.jar` is not doing us much good.  So, let's get an agent, the [RandomAgentJava Random Java agent].
+
+Again, we'll follow the directions on that project's download page.
+
+{{{
+#We can skip creating the rl-library directory because we have it already
+
+#If you are on Linux, you can use wget which will download RandomAgent-Java-R1093.tar.gz for you
+wget http://rl-library.googlecode.com/files/RandomAgent-Java-R1093.tar.gz
+
+#Copy the download to your local rl-library folder
+cp RandomAgent-Java-R1093.tar.gz rl-library/
+cd rl-library
+
+tar -zxf RandomAgent-Java-R1093.tar.gz
+
+#Clean up
+rm RandomAgent-Java-R1093.tar.gz
+}}}
+
+At the end of these steps, you will see some new things have been added to your rl-library directory structure:
