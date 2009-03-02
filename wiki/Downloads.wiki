@@ -1,4 +1,5 @@
 #summary This is the main page with information about how to download from the RL-Library.
+#labels Featured
 #sidebar DownloadList
 
 = Introduction =
