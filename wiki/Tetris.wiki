@@ -1,5 +1,0 @@
-#summary Details about the Tetris domain go here.
-
-= Introduction =
-
-A project in the RL-Library.  More information will go here soon.
