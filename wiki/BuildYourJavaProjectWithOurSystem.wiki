@@ -1,0 +1,49 @@
+#summary How to build your own agent, environments, or experiment using the RL-Library build system.
+
+<toc />
+
+= Introduction =
+This page will explain how you can either check-out or `svn:externals` the RL-Library system/common folder into your own projects (on your local computer or your own open-source project), to leverage some of the goodies that we use in the RL-Library build system.
+
+Basically, it gives you a very quick way to build RL-{Glue/Viz} compatible agents and environments that can easily be shared with others.  It is also an important step towards getting your own agents and environments listed in RL-Library, even if the source code is generally hosted elsewhere. 
+
+= Background = 
+In general, building Java projects so that they are portable and convenient to use is not complicated, but it does require some background knowledge, and there are some sticky issues that can cause frustration.
+
+We have invested considerable time streamlining our own build processes for the RL-Library and related projects, and we'd like to share them with you.
+
+
+= Starting Simple: The Random Agent =
+
+The first example of using the RL-Library build system will be to re-create the RandomAgent from the RL-Library, but with a different name and a different package structure.
+
+Because this is the simple version, we will not use `svn:externals`, we'll just take a snapshot of the current build system. In general, using `svn:externals` might be preferable because you instantly can get fixes and improvements to the build system in your own code.  On the other hand, if we break something, you might break also.
+
+
+
+== Creating the Directory Structure ==
+*Note:* This tutorial was created on a Ubuntu machine.  All of the directions should work for Mac OS X also. Windows under Cygwin might work.
+
+You'll need subversion installed for this tutorial.  If you ask me, I could create a `.tar.gz` file starter-kit with the necessary files.
+
+{{{
+#Create the folder for our project
+mkdir myRandomAgent
+cd myRandomAgent
+
+#Create a system folder
+mkdir system
+
+#Create a source folder
+mkdir src
+
+#Create a folder for the products we build
+mkdir products
+}}}
+
+Now you have the basic structure for the project.  We'll grab the `common` directory from the RL-Library project, it has most of the magic scripts and libraries that we will need for our own project.
+
+{{{
+#Download a copy of the common folder to our system folder
+svn export http://rl-library.googlecode.com/svn/trunk/system/common system/common
+}}}
