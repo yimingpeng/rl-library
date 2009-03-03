@@ -5,6 +5,7 @@
 
 == [AgentSidebar Agents] ==
  * RandomAgentJava
+ * [EpsilonGreedyTileCodingSarsaLambdaJava Tile-Coding Sarsa Lambda Java]
 
 == [EnvironmentSidebar Environments] ==
  * AcrobotJava
