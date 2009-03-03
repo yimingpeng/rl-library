@@ -12,5 +12,7 @@
 
 == [ExperimentSidebar Experiments] ==
  * [SampleExperimentRLGlueJava]
+ * [EpsilonGreedyTileCodingSarsaLambdaJava Tile-Coding Sarsa Lambda Java]
+
 
 = [MainInfoPage Tutorials] =
