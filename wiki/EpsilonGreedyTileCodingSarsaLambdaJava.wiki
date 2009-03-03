@@ -66,19 +66,19 @@ make changes and recompile, you can simply type:
 >$ cd EpsilonGreedyTileCodingSarsaLambda-Java-R13
 >$ ant clean
 
-#this will update ../products/TileCodingEpsilonGreedySarsaLambda.jar
+#this will update ../products/EpsilonGreedyTileCodingSarsaLambda.jar
 >$ ant build
 }}}
 
 == Running This Project ==
 You can run this project by typing:
 {{{
->$ java -jar products/TileCodingEpsilonGreedySarsaLambda.jar
+>$ java -jar products/EpsilonGreedyTileCodingSarsaLambda.jar
 }}}
 You can also use it in conjunction with RL-Library by putting the JAR file
-products/TileCodingEpsilonGreedySarsaLambda.jar in the appropriate directory, as long as the 
+products/EpsilonGreedyTileCodingSarsaLambda.jar in the appropriate directory, as long as the 
 RL-Viz library jar file is in the appropriate relative location from
-where you put TileCodingEpsilonGreedySarsaLambda.jar.  The location is:
+where you put EpsilonGreedyTileCodingSarsaLambda.jar.  The location is:
 ../system/common/libs/rl-viz/RLVizLib.jar
 
 == Getting Help ==
