@@ -9,6 +9,7 @@
 
 == [AgentSidebar Agents] ==
  * RandomAgentJava
+ * [EpsilonGreedyTileCodingSarsaLambda Tile-Coding Sarsa Lambda]
 
 == [ExperimentSidebar Experiments] ==
  * [SampleExperimentRLGlueJava]
