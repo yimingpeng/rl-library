@@ -19,6 +19,9 @@ This experiment runs in _external_ mode, which means that the agent, environment
 The instructions below have copy + paste-able instructions that have been brought in from the appropriate download pages.  Be warned: the instructions in THIS tutorial do not get updated as the version numbers of the actual download do.  What I mean is that if you follow these instructions to the letter, you are downloading OLD versions of everything.  You should actually follow the links to the download pages and follow the instructions there.  I just have them here also to give you a full picture of the steps involved.
 
 = How RLVizApp Works =
+RLVizApp is a very fancy experiment program.  It uses the Agent/Environment messaging system and a higher-level protocol to send information back and forth between the agents and environments.
+
+In fact, to do dynamic-loading of agents and environments, RLVizApp uses a *fake* agent and environment called _AgentShell_ and _EnvironmentShell_.  AgentShell, for example, is a valid RL-Glue agent, but it is not a learning agent.   It actually looks to a directory on the hard disk for other agents, and then creates a list of available agents that can be queried by RLVizApp.  When RLVizApp selects an agent, it sends a message to the AgentShell, which uses Java reflection to load the agent.  From now on, when RLVizApp calls RL-Glue commands like agent_init, AgentShell will receive the command and pass it on to the actual agent that was loaded.  The EnvironmentShell works analogously.
 
 
 
@@ -81,19 +84,4 @@ java -ea -Xmx128M -jar  $systemPath/common/libs/rl-viz/RLVizApp.jar list-agents=
 *Note:* To make the above example work, you'll also have to comment out the line in `run.bash` that starts the _AgentShell_.
 
 
-
-
 We will soon make a different tutorial that explains how to run RLVizApp in _internal_ mode, so that you do not need the RL-Glue core project.
-
-= Experiment Details =
-Details about the experiments are in the README files in each experiment.  Basically, they each run a small number of episodes on an environment.
-
-The RL-Glue experiment script runs an agent and environment outside of the experiment java program.  Alternatively, any rl-glue agent and environment could be started manually.  The experiment java program has no control over what agents and environments are being used and how they are configured.
-
-The RL-Viz experiment can choose the environment and agent at runtime, by sending appropriate message the the environmentShell and the agentShell.  If you run the program it will tell you what environments and agents are available.  There is also a version in there that lets you run any RL-Glue agent externally.  Check the README.txt file in that directory.
-
-There is optional code in that experiment to set the flag of `randomStartStates` in Mountain Car, as a quick example of runtime configuration.
-
-= Running An Experiment = 
-
-Go into the appropriate directory run the bash script.
