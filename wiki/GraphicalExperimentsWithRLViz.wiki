@@ -1,6 +1,6 @@
 #summary Tutorial on dynamically loading and visualizing Java agents an environments with RL-Viz.  This tutorial makes use of the [SampleExperimentRLVizAppJava RLVizApp sample experiment].
-
 #sidebar InfoSidebar
+
 *Table of Contents*
 <wiki:toc />
 ----
