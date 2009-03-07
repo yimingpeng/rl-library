@@ -32,6 +32,9 @@ rl-library/products
 
 When you download a Java project from the RL-Library, and you unpack it, it will give you these directories, plus a new directory specific for this project.
 
+* IMPORTANT NOTE * 
+All of the examples below have copy + paste-able instructions that have been brought in from the appropriate download pages.  Be warned: the instructions in THIS tutorial do not get updated as the version numbers of the actual download do.  What I mean is that if you follow these instructions to the letter, you are downloading OLD versions of everything.  You should actually follow the links to the download pages and follow the instructions there.  I just have them here also to give you a full picture of the steps involved.
+
 == Example - Downloading Mountain Car==
 Let's say you are new to RL-Library, and you want to download [MountainCarJava Mountain Car], because everyone loves Mountain Car.
 
