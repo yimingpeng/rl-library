@@ -14,7 +14,7 @@
 
 == [ExperimentSidebar Experiments] ==
  * [SampleExperimentRLGlueJava RL-Glue Sample Experiment]
- * [GraphicalExperimentsWithRLViz RLVizApp Sample Experiment]
+ * [SampleExperimentRLVizAppJava RLVizApp Sample Experiment]
 
 
 = [MainInfoPage Tutorials] =
